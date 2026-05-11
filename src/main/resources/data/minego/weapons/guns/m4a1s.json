@@ -1,0 +1,208 @@
+{
+  "general": {
+    "action": "ntgl:gun",
+    "enchantable": false,
+    "fireMode": ["ntgl:auto"],
+    "rate": 3,
+    "gripType": "ntgl:two_handed",
+    "maxAmmo": 12,
+    "reloadTime": 45,
+    "reloadAmount": 3,
+    "recoilAngle": 3.2,
+    "recoilKick": 1.2,
+    "equipTime": 27,
+    "recoilAdsReduction": 0.45,
+    "alwaysSpread": true,
+    "spread": 1.0,
+    "ammo": [
+      "minego:common_ammo"
+    ]
+  },
+  "ammoData": {
+    "minego:common_ammo": {
+      "ammo": {
+        "type": "ntgl:standard"
+      },
+      "projectile":{
+        "damage": 11.0,
+        "size": 0.2,
+        "speed": 26.0,
+        "life": 12
+      }
+    }
+  },
+  "modes": {
+    "ntgl:secondary": {
+      "general": {
+        "action": "ntgl:scope"
+      },
+      "zoom": {
+        "offset": [ 0, 1, 4.0],
+        "fovModifier": 0.7
+      }
+    }
+  },
+  "sounds": {
+    "fire": "minego:item.m4a1s.fire",
+    "silencedFire": "minego:item.m4a1s.silenced_fire",
+    "draw": "minego:item.m4a1s.equip",
+    "clipout": "minego:item.m4a1s.clipout",
+    "clipin": "minego:item.m4a1s.clipin",
+    "boltforward": "minego:item.m4a1s.boltpull"
+  },
+  "textures": {
+    "default" : "minego:textures/guns/m4a1s/m4a1s_default.png",
+    "bloodtiger" : "minego:textures/guns/m4a1s/m4a1s_bloodtiger.png"
+  },
+  "modules": {
+    "attachments": {
+      "minego:charm": [
+        {
+          "name": "charm_1",
+          "item": "minego:flat_charm",
+          "hide": [
+            "charm_2",
+            "charm_3",
+            "charm_4",
+            "charm_5"
+          ]
+        },
+        {
+          "name": "charm_5",
+          "item": "minego:chicken_charm",
+          "hide": [
+            "charm_2",
+            "charm_3",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_3",
+          "item": "minego:lilbro_charm",
+          "hide": [
+            "charm_2",
+            "charm_5",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_2",
+          "item": "minego:lilfrag_charm",
+          "hide": [
+            "charm_3",
+            "charm_5",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_4",
+          "item": "minego:acryl_charm",
+          "hide": [
+            "charm_3",
+            "charm_5",
+            "charm_2",
+            "charm_1"
+          ]
+        }
+      ],
+      "ntgl:scope": [
+        {
+          "name": "scope_1",
+          "item": "minego:small_scope",
+          "hide": [
+            "scope_def"
+          ],
+          "yOffset": -1
+        },
+        {
+          "name": "scope_2",
+          "item": "minego:scope",
+          "hide": [
+            "scope_def"
+          ]
+        },
+        {
+          "name": "scope_3",
+          "item": "minego:advanced_scope",
+          "hide": [
+            "scope_def"
+          ]
+        },
+        {
+          "name": "scope_4",
+          "item": "minego:hunt_scope",
+          "hide": [
+            "scope_def"
+          ]
+        }
+      ],
+      "ntgl:barrel": [
+        {
+          "name": "silencer",
+          "item": "minego:silencer",
+          "hide": [
+            "muzzle_flash"
+          ]
+        },
+        {
+          "name": "barrel_2",
+          "item": "minego:long_barrel",
+          "hide": [
+            "barrel_def"
+          ]
+        },
+        {
+          "name": "barrel_3",
+          "item": "minego:flash_hidder",
+          "hide": [
+            "muzzle_flash"
+          ]
+        },
+        {
+          "name": "barrel_4",
+          "item": "minego:tank_barrel"
+        }
+      ],
+      "ntgl:grip": [
+        {
+          "name": "stock_1",
+          "item": "minego:tactical_stock"
+        },
+        {
+          "name": "stock_2",
+          "item": "minego:light_stock"
+        },
+        {
+          "name": "stock_3",
+          "item": "minego:heavy_stock"
+        }
+      ],
+      "ntgl:under_barrel": [
+        {
+          "name": "grip_1",
+          "item": "minego:tripod"
+        },
+        {
+          "name": "grip_2",
+          "item": "minego:tactical_grip"
+        },
+        {
+          "name": "grip_3",
+          "item": "minego:spec_grip"
+        }
+      ],
+      "ntgl:magazine": [
+        {
+          "name": "mag_1",
+          "item": "minego:rifle_mag",
+          "hide": [
+            "mag_def"
+          ]
+        }
+      ]
+    }
+  }
+}

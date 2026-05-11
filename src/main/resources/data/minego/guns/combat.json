@@ -1,0 +1,43 @@
+{
+  "general": {
+    "weaponMode": "ntgl:melee",
+    "gripType": "ntgl:hammer",
+    "equipTime": 14,
+    "enchantable": false,
+    "renderHud": false,
+    "melee": true
+  },
+  "melee": {
+    "mode": "ntgl:single",
+    "damage": 7,
+    "delay": 4,
+    "cooldown": 9,
+    "distance": 3,
+    "angle": 70,
+    "maxTargets": 6,
+    "knockback": 0.4
+  },
+  "textures": {
+    "default" : "minego:textures/guns/combat/combat_default.png",
+    "alumi" : "minego:textures/guns/combat/combat_alumi.png",
+    "bluesteel" : "minego:textures/guns/combat/combat_bluesteel.png",
+    "casehard" : "minego:textures/guns/combat/combat_casehard.png",
+    "casehard_rare" : "minego:textures/guns/combat/combat_casehard_rare.png",
+    "crimsonweb" : "minego:textures/guns/combat/combat_crimsonweb.png",
+    "patina" : "minego:textures/guns/combat/combat_patina.png",
+    "forest" : "minego:textures/guns/combat/combat_forest.png",
+    "night" : "minego:textures/guns/combat/combat_night.png",
+    "safari_mesh" : "minego:textures/guns/combat/combat_safarimesh.png",
+    "scorched" : "minego:textures/guns/combat/combat_scorched.png",
+    "slaughter" : "minego:textures/guns/combat/combat_slaughter.png"
+  },
+  "animations": {
+    "ntgl:melee": "nukacraft:katana_hit"
+  },
+  "sounds": {
+    "equip": "minego:item.knife.equip",
+    "melee_swing": "minego:item.knife.slash",
+    "inspect": "minego:item.knife.inspect",
+    "click": "minego:item.knife.click"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "item.famas.fire":                  { "subtitle": "subtitle.ntgl.fire",           "sounds": [
+    { "name": "minego:item/famas/fire" },
+    { "name": "minego:item/famas/fire2" },
+    { "name": "minego:item/famas/fire3" }]},
+  "item.famas.draw":         { "subtitle": "subtitle.ntgl.draw",  "sounds": [{ "name": "minego:item/famas/draw" }]},
+  "item.famas.clipout":        { "subtitle": "subtitle.ntgl.clipout", "sounds": [{ "name": "minego:item/famas/clipout" }]},
+  "item.famas.clipin":                { "subtitle": "subtitle.ntgl.clipin",         "sounds": [{ "name": "minego:item/famas/clipin" }]},
+  "item.famas.boltforward":                  { "subtitle": "subtitle.ntgl.boltforward",           "sounds": [{ "name": "minego:item/famas/boltforward" }]},
+
+  "item.knife.inspect":         { "subtitle": "subtitle.ntgl.inspect",  "sounds": [{ "name": "minego:item/knife/inspect" }]},
+  "item.knife.slash":         { "subtitle": "subtitle.ntgl.fire",  "sounds": [{ "name": "minego:item/knife/slash" }]},
+  "item.knife.click":         { "subtitle": "subtitle.ntgl.click",  "sounds": [{ "name": "minego:item/knife/click" }]},
+  "item.knife.equip":         { "subtitle": "subtitle.ntgl.equip",  "sounds": [{ "name": "minego:item/knife/equip" }]},
+
+  "item.p250.fire":         { "subtitle": "subtitle.ntgl.draw",  "sounds": [{ "name": "minego:item/p250/fire" }]},
+  "item.p250.clipout":        { "subtitle": "subtitle.ntgl.clipout", "sounds": [{ "name": "minego:item/p250/clipout" }]},
+  "item.p250.clip":                { "subtitle": "subtitle.ntgl.clipin",         "sounds": [{ "name": "minego:item/p250/clip" }]},
+  "item.p250.slide":                  { "subtitle": "subtitle.ntgl.boltforward",           "sounds": [{ "name": "minego:item/p250/slide" }]},
+
+  "item.tec9.fire":         { "subtitle": "subtitle.ntgl.draw",  "sounds": [{ "name": "minego:item/tec9/fire" }]},
+  "item.tec9.clipout":        { "subtitle": "subtitle.ntgl.clipout", "sounds": [{ "name": "minego:item/tec9/clipout" }]},
+  "item.tec9.clipin":                { "subtitle": "subtitle.ntgl.clipin",         "sounds": [{ "name": "minego:item/tec9/clipin" }]},
+  "item.tec9.boltpull":                  { "subtitle": "subtitle.ntgl.boltforward",           "sounds": [{ "name": "minego:item/tec9/boltpull" }]},
+  "item.tec9.equip":                  { "subtitle": "subtitle.ntgl.draw",           "sounds": [{ "name": "minego:item/tec9/equip" }]},
+
+  "item.cz75.fire":         { "subtitle": "subtitle.ntgl.draw",  "sounds": [{ "name": "minego:item/cz75/fire" }]},
+
+  "item.deagle.fire":         { "subtitle": "subtitle.ntgl.draw",  "sounds": [{ "name": "minego:item/deagle/fire" }]},
+  "item.deagle.clipin":         { "subtitle": "subtitle.ntgl.clipin",  "sounds": [{ "name": "minego:item/deagle/clipin" }]},
+  "item.deagle.clipout":         { "subtitle": "subtitle.ntgl.clipout",  "sounds": [{ "name": "minego:item/deagle/clipout" }]},
+  "item.deagle.draw":         { "subtitle": "subtitle.ntgl.draw",  "sounds": [{ "name": "minego:item/deagle/equip" }]},
+
+  "item.m4a1s.fire":         { "subtitle": "subtitle.ntgl.draw",  "sounds": [{ "name": "minego:item/m4a1s/fire" }]},
+  "item.m4a1s.clipout":        { "subtitle": "subtitle.ntgl.clipout", "sounds": [{ "name": "minego:item/m4a1s/clipout" }]},
+  "item.m4a1s.clipin":                { "subtitle": "subtitle.ntgl.clipin",         "sounds": [{ "name": "minego:item/m4a1s/clipin" }]},
+  "item.m4a1s.boltpull":                  { "subtitle": "subtitle.ntgl.boltforward",           "sounds": [{ "name": "minego:item/m4a1s/boltpull" }]},
+  "item.m4a1s.equip":                  { "subtitle": "subtitle.ntgl.draw",           "sounds": [{ "name": "minego:item/m4a1s/equip" }]},
+  "item.m4a1s.silenced_fire":                  { "subtitle": "subtitle.ntgl.draw",           "sounds": [{ "name": "minego:item/m4a1s/silenced_fire" }]},
+
+  "item.ak47.fire":         { "subtitle": "subtitle.ntgl.draw",  "sounds": [{ "name": "minego:item/ak47/fire" }]},
+  "item.ak47.clipout":        { "subtitle": "subtitle.ntgl.clipout", "sounds": [{ "name": "minego:item/ak47/clipout" }]},
+  "item.ak47.clipin":                { "subtitle": "subtitle.ntgl.clipin",         "sounds": [{ "name": "minego:item/ak47/clipin" }]},
+  "item.ak47.boltpull":                  { "subtitle": "subtitle.ntgl.boltpull",           "sounds": [{ "name": "minego:item/ak47/boltpull" }]},
+  "item.ak47.equip":                  { "subtitle": "subtitle.ntgl.draw",           "sounds": [{ "name": "minego:item/ak47/draw" }]},
+
+
+  "item.berreta.clipin":                  { "subtitle": "subtitle.ntgl.clipin",           "sounds": [{ "name": "minego:item/berreta/clipin" }]},
+  "item.berreta.clipout":                  { "subtitle": "subtitle.ntgl.clipout",           "sounds": [{ "name": "minego:item/berreta/clipout" }]},
+  "item.berreta.fire":                  { "subtitle": "subtitle.ntgl.fire",           "sounds": [{ "name": "minego:item/berreta/fire" }]},
+  "item.berreta.equip":                  { "subtitle": "subtitle.ntgl.equip",           "sounds": [{ "name": "minego:item/berreta/equip" }]},
+  "item.berreta.slide":                  { "subtitle": "subtitle.ntgl.slide",           "sounds": [{ "name": "minego:item/berreta/slide" }]},
+
+  "item.nova.slide":                  { "subtitle": "subtitle.ntgl.slide",           "sounds": [{ "name": "minego:item/nova/slide" }]},
+  "item.nova.fire":                  { "subtitle": "subtitle.ntgl.fire",           "sounds": [{ "name": "minego:item/nova/fire" }]},
+  "item.nova.shell":                  { "subtitle": "subtitle.ntgl.shell",           "sounds": [{ "name": "minego:item/nova/shell" }]},
+  "item.nova.equip":                  { "subtitle": "subtitle.ntgl.equip",           "sounds": [{ "name": "minego:item/nova/equip" }]},
+
+  "item.fiveseven.fire":         { "subtitle": "subtitle.ntgl.fire",  "sounds": [{ "name": "minego:item/fiveseven/fire" }]},
+  "item.fiveseven.clipout":        { "subtitle": "subtitle.ntgl.clipout", "sounds": [{ "name": "minego:item/fiveseven/clipout" }]},
+  "item.fiveseven.clip":                { "subtitle": "subtitle.ntgl.clipin",         "sounds": [{ "name": "minego:item/fiveseven/clip" }]},
+  "item.fiveseven.slide":                  { "subtitle": "subtitle.ntgl.boltforward",           "sounds": [{ "name": "minego:item/fiveseven/slide" }]},
+  "item.fiveseven.equip":                  { "subtitle": "subtitle.ntgl.boltforward",           "sounds": [{ "name": "minego:item/fiveseven/equip" }]},
+
+  "item.usp.silenced_fire":         { "subtitle": "subtitle.ntgl.fire",  "sounds": [{ "name": "minego:item/usp/silenced_fire" }]},
+  "item.usp.clipout":        { "subtitle": "subtitle.ntgl.clipout", "sounds": [{ "name": "minego:item/usp/clipout" }]},
+  "item.usp.clip":                { "subtitle": "subtitle.ntgl.clipin",         "sounds": [{ "name": "minego:item/usp/clip" }]},
+  "item.usp.slide":                  { "subtitle": "subtitle.ntgl.boltforward",           "sounds": [{ "name": "minego:item/usp/slide" }]},
+  "item.usp.equip":                  { "subtitle": "subtitle.ntgl.boltforward",           "sounds": [{ "name": "minego:item/usp/equip" }]},
+
+  "item.mp9.fire":         { "subtitle": "subtitle.ntgl.fire",  "sounds": [{ "name": "minego:item/mp9/fire" }]},
+  "item.mp9.clipout":        { "subtitle": "subtitle.ntgl.clipout", "sounds": [{ "name": "minego:item/mp9/clipout" }]},
+  "item.mp9.clip":                { "subtitle": "subtitle.ntgl.clipin",         "sounds": [{ "name": "minego:item/mp9/clip" }]},
+  "item.mp9.boltforward":                  { "subtitle": "subtitle.ntgl.boltforward",           "sounds": [{ "name": "minego:item/mp9/boltforward" }]},
+  "item.mp9.equip":                  { "subtitle": "subtitle.ntgl.draw",           "sounds": [{ "name": "minego:item/mp9/equip" }]},
+
+  "item.p90.equip":                  { "subtitle": "subtitle.ntgl.draw",           "sounds": [{ "name": "minego:item/p90/equip" }]},
+  "item.p90.clipout":                  { "subtitle": "subtitle.ntgl.clipout",           "sounds": [{ "name": "minego:item/p90/clipout" }]},
+  "item.p90.clipin":                  { "subtitle": "subtitle.ntgl.clipin",           "sounds": [{ "name": "minego:item/p90/clipin" }]},
+  "item.p90.slide":                  { "subtitle": "subtitle.ntgl.boltforward",           "sounds": [{ "name": "minego:item/p90/slide" }]},
+  "item.p90.fire":                  { "subtitle": "subtitle.ntgl.fire",           "sounds": [{ "name": "minego:item/p90/fire" }]},
+
+  "item.scar20.draw":         { "subtitle": "subtitle.ntgl.draw",  "sounds": [{ "name": "minego:item/scar20/draw" }]},
+  "item.scar20.fire":         { "subtitle": "subtitle.ntgl.fire",  "sounds": [{ "name": "minego:item/scar20/fire" }]},
+  "item.scar20.clipout":        { "subtitle": "subtitle.ntgl.clipout", "sounds": [{ "name": "minego:item/scar20/clipout" }]},
+  "item.scar20.clipin":                { "subtitle": "subtitle.ntgl.clipin",         "sounds": [{ "name": "minego:item/scar20/clipin" }]},
+  "item.scar20.boltforward":                  { "subtitle": "subtitle.ntgl.boltforward",           "sounds": [{ "name": "minego:item/scar20/boltforward" }]},
+
+  "item.ssg08.draw":         { "subtitle": "subtitle.ntgl.draw",  "sounds": [{ "name": "minego:item/ssg08/draw" }]},
+  "item.ssg08.fire":         { "subtitle": "subtitle.ntgl.fire",  "sounds": [{ "name": "minego:item/ssg08/fire" }]},
+  "item.ssg08.clipout":        { "subtitle": "subtitle.ntgl.clipout", "sounds": [{ "name": "minego:item/ssg08/clipout" }]},
+  "item.ssg08.clipin":                { "subtitle": "subtitle.ntgl.clipin",         "sounds": [{ "name": "minego:item/ssg08/clipin" }]},
+  "item.ssg08.boltforward":                  { "subtitle": "subtitle.ntgl.boltforward",           "sounds": [{ "name": "minego:item/ssg08/boltforward" }]},
+
+  "item.awp.draw":         { "subtitle": "subtitle.ntgl.draw",  "sounds": [{ "name": "minego:item/awp/draw" }]},
+  "item.awp.fire":         { "subtitle": "subtitle.ntgl.fire",  "sounds": [{ "name": "minego:item/awp/fire" }]},
+  "item.awp.clipout":        { "subtitle": "subtitle.ntgl.clipout", "sounds": [{ "name": "minego:item/awp/clipout" }]},
+  "item.awp.clipin":                { "subtitle": "subtitle.ntgl.clipin",         "sounds": [{ "name": "minego:item/awp/clipin" }]},
+  "item.awp.boltforward":                  { "subtitle": "subtitle.ntgl.boltforward",           "sounds": [{ "name": "minego:item/awp/boltforward" }]},
+
+
+  "item.default.pistol_silencedfire":         { "subtitle": "subtitle.ntgl.fire",  "sounds": [{ "name": "minego:item/default/pistol_silencedfire" }]},
+  "item.default.shotgun_silencedfire":         { "subtitle": "subtitle.ntgl.fire",  "sounds": [{ "name": "minego:item/default/shotgun_silencedfire" }]},
+  "item.default.smg_silencedfire":         { "subtitle": "subtitle.ntgl.fire",  "sounds": [{ "name": "minego:item/default/smg_silencedfire" }]},
+  "item.default.sniper_silencedfire":         { "subtitle": "subtitle.ntgl.fire",  "sounds": [{ "name": "minego:item/default/sniper_silencedfire" }]}
+}

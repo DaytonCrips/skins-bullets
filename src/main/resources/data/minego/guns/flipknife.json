@@ -1,0 +1,43 @@
+{
+  "general": {
+    "weaponMode": "ntgl:melee",
+    "gripType": "ntgl:hammer",
+    "equipTime": 14,
+    "enchantable": false,
+    "renderHud": false,
+    "melee": true
+  },
+  "melee": {
+    "mode": "ntgl:single",
+    "damage": 7,
+    "delay": 4,
+    "cooldown": 9,
+    "distance": 3,
+    "angle": 70,
+    "maxTargets": 6,
+    "knockback": 0.4
+  },
+  "textures": {
+    "default" : "minego:textures/guns/flipknife/flipknife_default.png",
+    "alumi" : "minego:textures/guns/flipknife/flipknife_alumi.png",
+    "bluesteel" : "minego:textures/guns/flipknife/flipknife_bluesteel.png",
+    "casehard" : "minego:textures/guns/flipknife/flipknife_casehard.png",
+    "casehard_rare" : "minego:textures/guns/flipknife/flipknife_casehard_rare.png",
+    "crimsonweb" : "minego:textures/guns/flipknife/flipknife_crimsonweb.png",
+    "patina" : "minego:textures/guns/flipknife/flipknife_patina.png",
+    "forest" : "minego:textures/guns/flipknife/flipknife_forest.png",
+    "night" : "minego:textures/guns/flipknife/flipknife_night.png",
+    "safari_mesh" : "minego:textures/guns/flipknife/flipknife_safarimesh.png",
+    "scorched" : "minego:textures/guns/flipknife/flipknife_scorched.png",
+    "slaughter" : "minego:textures/guns/flipknife/flipknife_slaughter.png"
+  },
+  "animations": {
+    "ntgl:melee": "nukacraft:katana_hit"
+  },
+  "sounds": {
+    "equip": "minego:item.knife.equip",
+    "melee_swing": "minego:item.knife.slash",
+    "inspect": "minego:item.knife.inspect",
+    "click": "minego:item.knife.click"
+  }
+}

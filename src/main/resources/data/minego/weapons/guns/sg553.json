@@ -1,0 +1,45 @@
+{
+  "general": {
+    "action": "ntgl:gun",
+    "enchantable": false,
+    "fireMode": ["ntgl:auto"],
+    "rate": 2,
+    "gripType": "ntgl:two_handed",
+    "maxAmmo": 30,
+    "reloadTime": 45,
+    "reloadAmount": 3,
+    "recoilAngle": 3.2,
+    "recoilKick": 1.2,
+    "equipTime": 27,
+    "recoilAdsReduction": 0.45,
+    "alwaysSpread": true,
+    "spread": 1.0,
+    "ammo": [
+      "minego:common_ammo"
+    ]
+  },
+  "ammoData": {
+    "minego:common_ammo": {
+      "ammo": {
+        "type": "ntgl:standard"
+      },
+      "projectile":{
+        "damage": 5.0,
+        "size": 0.2,
+        "speed": 26.0,
+        "life": 12
+      }
+    }
+  },
+  "sounds": {
+    "fire": "minego:item.famas.fire",
+    "silencedFire": "minego:item.m4a1s.silenced_fire",
+    "draw": "minego:item.famas.draw",
+    "clipout": "minego:item.famas.clipout",
+    "clipin": "minego:item.famas.clipin",
+    "boltforward": "minego:item.famas.boltforward"
+  },
+  "textures": {
+    "default" : "minego:textures/guns/sg553/sg553_default.png"
+  }
+}

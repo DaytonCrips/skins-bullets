@@ -1,0 +1,45 @@
+{
+  "general": {
+    "action": "ntgl:gun",
+    "enchantable": false,
+    "rate": 11,
+    "gripType": "ntgl:two_handed",
+    "loadingType": "ntgl:per_cartridge",
+    "maxAmmo": 7,
+    "reloadTime": 18,
+    "reloadAmount": 1,
+    "equipTime": 27,
+    "recoilAngle": 15.0,
+    "recoilKick": 1,
+    "recoilAdsReduction": 0.6,
+    "alwaysSpread": true,
+    "spread": 10.0,
+    "ammo": [
+      "minego:common_ammo"
+    ]
+  },
+  "ammoData": {
+    "minego:common_ammo": {
+      "ammo": {
+        "type": "ntgl:buckshot"
+      },
+      "projectile":{
+        "damage": 13.0,
+        "size": 1.0,
+        "speed": 10.0,
+        "life": 5,
+        "projectileAmount": 6
+      }
+    }
+  },
+  "sounds": {
+    "fire": "minego:item.nova.fire",
+    "silencedFire": "minego:item.default.shotgun_silencedfire",
+    "draw": "minego:item.nova.equip",
+    "slide": "minego:item.nova.slide",
+    "shell": "minego:item.nova.shell"
+  },
+  "textures": {
+    "default" : "minego:textures/guns/sawedoff/sawedoff_default.png"
+  }
+}

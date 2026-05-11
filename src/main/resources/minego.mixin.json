@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "com.nukateam.minego.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "minego.mixin-refmap.json",
+  "minVersion": "0.8",
+  "server": [],
+  "mixins": [
+  ],
+  "client": [
+    "client.WeaponTooltipsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

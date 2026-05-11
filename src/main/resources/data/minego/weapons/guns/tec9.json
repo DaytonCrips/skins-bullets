@@ -1,0 +1,131 @@
+{
+  "general": {
+    "action": "ntgl:gun",
+    "enchantable": false,
+    "fireMode":
+    [
+      "ntgl:auto",
+      "ntgl:semi"],
+    "rate": 3,
+    "gripType": "ntgl:two_handed",
+    "maxAmmo": 18,
+    "reloadTime": 50,
+    "reloadAmount": 3,
+    "recoilAngle": 4.3,
+    "recoilKick": 0.5,
+    "equipTime": 17,
+    "recoilAdsReduction": 0.45,
+    "alwaysSpread": true,
+    "spread": 1.5,
+    "ammo": [
+      "minego:primary_ammo"
+    ]
+  },
+  "ammoData": {
+    "minego:primary_ammo": {
+      "ammo": {
+        "type": "ntgl:standard"
+      },
+      "projectile":{
+        "damage": 6.0,
+        "size": 0.2,
+        "speed": 26.0,
+        "life": 12
+      }
+    }
+  },
+  "sounds": {
+    "fire": "minego:item.tec9.fire",
+    "silencedFire": "minego:item.default.smg_silencedfire",
+    "draw": "minego:item.tec9.equip",
+    "clipout": "minego:item.tec9.clipout",
+    "clipin": "minego:item.tec9.clipin",
+    "boltforward": "minego:item.tec9.boltpull"
+  },
+  "textures": {
+    "default" : "minego:textures/guns/tec9/tec9_default.png",
+    "bluetitanium" : "minego:textures/guns/tec9/tec9_bluetitanium.png",
+    "titaniumbit" : "minego:textures/guns/tec9/tec9_titaniumbit.png"
+  },
+  "modules": {
+    "attachments": {
+      "minego:stattrak": [
+        {
+          "name": "stattrack",
+          "item": "minego:stattrak"
+        }
+      ],"minego:charm": [
+        {
+          "name": "charm_1",
+          "item": "minego:flat_charm",
+          "hide": [
+            "charm_2",
+            "charm_3",
+            "charm_4",
+            "charm_5"
+          ]
+        },
+        {
+          "name": "charm_5",
+          "item": "minego:chicken_charm",
+          "hide": [
+            "charm_2",
+            "charm_3",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_3",
+          "item": "minego:lilbro_charm",
+          "hide": [
+            "charm_2",
+            "charm_5",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_2",
+          "item": "minego:lilfrag_charm",
+          "hide": [
+            "charm_3",
+            "charm_5",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_4",
+          "item": "minego:acryl_charm",
+          "hide": [
+            "charm_3",
+            "charm_5",
+            "charm_2",
+            "charm_1"
+          ]
+        }
+      ],
+      "ntgl:barrel": [
+        {
+          "name": "barrel_2",
+          "item": "minego:long_barrel"
+        },
+        {
+          "name": "barrel_1",
+          "item": "minego:silencer",
+          "hide": [
+            "muzzle_flash"
+          ]
+        },
+        {
+          "name": "barrel_3",
+          "item": "minego:flash_hidder",
+          "hide": [
+            "muzzle_flash"
+          ]
+        }
+      ]
+    }
+  }
+}

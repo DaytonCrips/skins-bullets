@@ -1,0 +1,42 @@
+{
+  "general": {
+    "weaponMode": "ntgl:melee",
+    "gripType": "ntgl:hammer",
+    "equipTime": 14,
+    "enchantable": false,
+    "renderHud": false,
+    "melee": true
+  },
+  "melee": {
+    "mode": "ntgl:single",
+    "damage": 7,
+    "delay": 4,
+    "cooldown": 9,
+    "distance": 3,
+    "angle": 70,
+    "maxTargets": 6,
+    "knockback": 0.4
+  },
+  "textures": {
+    "default" : "minego:textures/guns/gutknife/gutknife_default.png",
+    "casehard" : "minego:textures/guns/gutknife/gutknife_casehard.png",
+    "casehard_rare" : "minego:textures/guns/gutknife/gutknife_casehard_rare.png",
+    "slaughter" : "minego:textures/guns/gutknife/gutknife_slaughter.png",
+    "alumi" : "minego:textures/guns/gutknife/gutknife_alumi.png",
+    "bluesteel" : "minego:textures/guns/gutknife/gutknife_bluesteel.png",
+    "crimsonweb" : "minego:textures/guns/gutknife/gutknife_crimsonweb.png",
+    "patina" : "minego:textures/guns/gutknife/gutknife_patina.png",
+    "forest" : "minego:textures/guns/gutknife/gutknife_forest.png",
+    "night" : "minego:textures/guns/gutknife/gutknife_night.png",
+    "safari_mesh" : "minego:textures/guns/gutknife/gutknife_safarimesh.png",
+    "scorched" : "minego:textures/guns/gutknife/gutknife_scorched.png"
+  },
+  "animations": {
+    "ntgl:melee": "nukacraft:katana_hit"
+  },
+  "sounds": {
+    "equip": "minego:item.knife.equip",
+    "melee_swing": "minego:item.knife.slash",
+    "inspect": "minego:item.knife.inspect"
+  }
+}

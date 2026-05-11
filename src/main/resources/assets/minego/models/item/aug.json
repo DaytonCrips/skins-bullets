@@ -1,0 +1,94 @@
+{
+  "credit": "NukaTeam's Work",
+  "parent": "builtin/entity",
+  "texture_size": [
+    320,
+    200
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [
+        0.5,
+        -1.75,
+        2.25
+      ],
+      "scale": [
+        0.75,
+        0.75,
+        0.75
+      ]
+    },
+    "thirdperson_lefthand": {
+      "translation": [
+        -0.5,
+        -1.75,
+        1.5
+      ],
+      "scale": [
+        0.75,
+        0.75,
+        0.75
+      ]
+    },
+    "firstperson_righthand": {
+      "translation": [
+        -4.25,
+        10,
+        5
+      ]
+    },
+    "firstperson_lefthand": {
+      "translation": [
+        0,
+        6.5,
+        5.25
+      ]
+    },
+    "ground": {
+      "rotation": [
+        32,
+        3,
+        0
+      ],
+      "translation": [
+        0,
+        1.5,
+        -5.5
+      ],
+      "scale": [
+        0.52,
+        0.52,
+        0.52
+      ]
+    },
+    "gui": {
+      "rotation": [
+        168.19999999999982,
+        44.159999999999854,
+        -170.92000000000007
+      ],
+      "translation": [
+        -5.5,
+        -2.75,
+        0
+      ],
+      "scale": [
+        0.83,
+        0.83,
+        0.83
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        -90,
+        0
+      ],
+      "translation": [
+        9.25,
+        -5.75,
+        -2
+      ]
+    }
+  }
+}

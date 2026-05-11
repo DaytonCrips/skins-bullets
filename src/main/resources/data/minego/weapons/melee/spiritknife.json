@@ -1,0 +1,26 @@
+{
+  "general": {
+    "enchantable": false,
+    "renderHud": false,
+    "action": "ntgl:melee",
+    "gripType": "ntgl:knife",
+    "equipTime": 15,
+    "melee": true
+  },
+  "melee": {
+    "mode": "ntgl:single",
+    "damage": 7,
+    "delay": 4,
+    "cooldown": 9,
+    "distance": 3,
+    "angle": 70,
+    "maxTargets": 3,
+    "knockback": 0.3
+  },
+  "sounds": {
+    "equip": "minego:item.knife.equip",
+    "melee_swing": "minego:item.knife.slash",
+    "inspect": "minego:item.knife.inspect",
+    "click": "minego:item.knife.click"
+  }
+}

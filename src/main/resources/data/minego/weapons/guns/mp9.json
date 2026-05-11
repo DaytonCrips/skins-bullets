@@ -1,0 +1,144 @@
+{
+  "general": {
+    "action": "ntgl:gun",
+    "enchantable": false,
+    "fireMode":
+    [
+      "ntgl:auto"],
+    "rate": 2,
+    "gripType": "ntgl:two_handed",
+    "maxAmmo": 30,
+    "reloadTime": 35,
+    "reloadAmount": 1,
+    "recoilAngle": 2.1,
+    "recoilKick": 1.5,
+    "equipTime": 17,
+    "recoilAdsReduction": 0.45,
+    "alwaysSpread": true,
+    "spread": 1.5,
+    "ammo": [
+      "minego:primary_ammo"
+    ]
+  },
+  "ammoData": {
+    "minego:primary_ammo": {
+      "ammo": {
+        "type": "ntgl:standard"
+      },
+      "projectile":{
+        "damage": 3.0,
+        "size": 0.3,
+        "speed": 26.0,
+        "life": 15
+      }
+    }
+  },
+  "sounds": {
+    "fire": "minego:item.mp9.fire",
+    "silencedFire": "minego:item.default.smg_silencedfire",
+    "clipout": "minego:item.mp9.clipout",
+    "clip": "minego:item.mp9.clipin",
+    "boltforward": "minego:item.mp9.boltforward"
+  },
+  "textures": {
+    "default" : "minego:textures/guns/mp9/mp9_default.png",
+    "hypnotic" : "minego:textures/guns/mp9/mp9_hypnotic.png"
+  },
+  "modules": {
+    "attachments": {
+      "minego:stattrak": [
+        {
+          "name": "stattrak",
+          "item": "minego:stattrak"
+        }
+      ],
+      "minego:charm": [
+        {
+          "name": "charm_1",
+          "item": "minego:flat_charm",
+          "hide": [
+            "charm_2",
+            "charm_3",
+            "charm_4",
+            "charm_5"
+          ]
+        },
+        {
+          "name": "charm_5",
+          "item": "minego:chicken_charm",
+          "hide": [
+            "charm_2",
+            "charm_3",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_3",
+          "item": "minego:lilbro_charm",
+          "hide": [
+            "charm_2",
+            "charm_5",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_2",
+          "item": "minego:lilfrag_charm",
+          "hide": [
+            "charm_3",
+            "charm_5",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_4",
+          "item": "minego:acryl_charm",
+          "hide": [
+            "charm_3",
+            "charm_5",
+            "charm_2",
+            "charm_1"
+          ]
+        }
+      ],
+      "ntgl:barrel": [
+        {
+          "name": "barrel_2",
+          "item": "minego:long_barrel"
+        },
+        {
+          "name": "barrel_1",
+          "item": "minego:silencer",
+          "hide": [
+            "muzzle_flash"
+          ]
+        },
+        {
+          "name": "barrel_3",
+          "item": "minego:flash_hidder",
+          "hide": [
+            "muzzle_flash"
+          ]
+        }
+      ],
+      "ntgl:scope": [
+        {
+          "name": "scope_1",
+          "item": "minego:small_scope"
+        }
+      ],
+      "ntgl:magazine": [
+        {
+          "name": "mag_1",
+          "item": "minego:pistol_mag",
+          "hide": [
+            "mag_def"
+          ]
+        }
+      ]
+    }
+  }
+}

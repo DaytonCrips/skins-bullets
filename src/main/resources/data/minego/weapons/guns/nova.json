@@ -1,0 +1,168 @@
+{
+  "general": {
+    "action": "ntgl:gun",
+    "enchantable": false,
+    "rate": 15,
+    "gripType": "ntgl:two_handed",
+    "loadingType": "ntgl:per_cartridge",
+    "maxAmmo": 8,
+    "reloadTime": 10,
+    "reloadAmount": 1,
+    "recoilAngle": 15.0,
+    "recoilKick": 1,
+    "equipTime": 27,
+    "recoilAdsReduction": 0.6,
+    "alwaysSpread": true,
+    "spread": 10.0,
+    "ammo": [
+      "minego:common_ammo"
+    ]
+  },
+  "modes": {
+    "ntgl:secondary": {
+      "general": {
+        "action": "ntgl:scope"
+      },
+      "zoom": {
+        "offset": [ -0.1, -3.0, 4.0],
+        "fovModifier": 0.7
+      }
+    }
+  },
+  "ammoData": {
+    "minego:common_ammo": {
+      "ammo": {
+        "type": "ntgl:buckshot"
+      },
+      "projectile":{
+        "damage": 13.0,
+        "size": 1.0,
+        "speed": 10.0,
+        "life": 5,
+        "projectileAmount": 6
+      }
+    }
+  },
+  "sounds": {
+    "fire": "minego:item.nova.fire",
+    "silencedFire": "minego:item.default.shotgun_silencedfire",
+    "draw": "minego:item.nova.equip",
+    "slide": "minego:item.nova.slide",
+    "shell": "minego:item.nova.shell"
+  },
+  "textures": {
+    "default" : "minego:textures/guns/nova/nova_default.png",
+    "graphite" : "minego:textures/guns/nova/nova_graphite.png"
+  },
+  "modules": {
+    "attachments": {
+      "minego:charm": [
+        {
+          "name": "charm_1",
+          "item": "minego:flat_charm",
+          "hide": [
+            "charm_2",
+            "charm_3",
+            "charm_4",
+            "charm_5"
+          ]
+        },
+        {
+          "name": "charm_5",
+          "item": "minego:chicken_charm",
+          "hide": [
+            "charm_2",
+            "charm_3",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_3",
+          "item": "minego:lilbro_charm",
+          "hide": [
+            "charm_2",
+            "charm_5",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_2",
+          "item": "minego:lilfrag_charm",
+          "hide": [
+            "charm_3",
+            "charm_5",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_4",
+          "item": "minego:acryl_charm",
+          "hide": [
+            "charm_3",
+            "charm_5",
+            "charm_2",
+            "charm_1"
+          ]
+        }
+      ],
+      "ntgl:scope": [
+        {
+          "name": "scope_1",
+          "item": "minego:small_scope",
+          "hide": [
+            "scope_def"
+          ],
+          "yOffset": 0.4
+        },
+        {
+          "name": "scope_2",
+          "item": "minego:scope",
+          "hide": [
+            "scope_def"
+          ]
+        },
+        {
+          "name": "scope_3",
+          "item": "minego:advanced_scope",
+          "hide": [
+            "scope_def"
+          ]
+        },
+        {
+          "name": "scope_4",
+          "item": "minego:hunt_scope",
+          "hide": [
+            "scope_def"
+          ]
+        }
+      ],
+      "ntgl:barrel": [
+        {
+          "name": "barrel_1",
+          "item": "minego:silencer",
+          "hide": [
+            "muzzle_flash"
+          ]
+        },
+        {
+          "name": "barrel_2",
+          "item": "minego:long_barrel"
+        },
+        {
+          "name": "barrel_3",
+          "item": "minego:flash_hidder",
+          "hide": [
+            "muzzle_flash"
+          ]
+        },
+        {
+          "name": "barrel_4",
+          "item": "minego:tank_barrel"
+        }
+      ]
+    }
+  }
+}

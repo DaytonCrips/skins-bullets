@@ -1,0 +1,9 @@
+{
+  "credit": "NukaTeam's Work",
+  "parent": "builtin/entity",
+  "loader": "minego:gun_icon_loader",
+  "textures": {
+    "base": "minego:item/dynamic/flat_charm/flat_charm_default",
+    "particle": "minego:item/dynamic/flat_charm/flat_charm_default"
+  }
+}

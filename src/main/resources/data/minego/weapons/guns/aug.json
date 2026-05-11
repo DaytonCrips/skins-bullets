@@ -1,0 +1,187 @@
+{
+  "general": {
+    "action": "ntgl:gun",
+    "enchantable": false,
+    "fireMode": ["ntgl:auto"],
+    "rate": 4,
+    "gripType": "ntgl:two_handed",
+    "maxAmmo": 30,
+    "reloadTime": 75,
+    "reloadAmount": 4,
+    "recoilAngle": 3.3,
+    "recoilKick": 2.5,
+    "equipTime": 37,
+    "recoilAdsReduction": 1.95,
+    "alwaysSpread": true,
+    "spread": 1.5,
+    "ammo": [
+      "minego:common_ammo"
+    ]
+  },
+  "ammoData": {
+    "minego:common_ammo": {
+      "ammo": {
+        "type": "ntgl:standard"
+      },
+      "projectile":{
+        "damage": 6.0,
+        "size": 0.3,
+        "speed": 21.0,
+        "life": 15
+      }
+    }
+  },
+  "modes": {
+    "ntgl:secondary": {
+      "general": {
+        "action": "ntgl:scope"
+      },
+      "zoom": {
+        "offset": [ -0.1, -1.6, 4.0],
+        "fovModifier": 0.7
+      }
+    }
+  },
+  "sounds": {
+    "fire": "minego:item.famas.fire",
+    "silencedFire": "minego:item.m4a1s.silenced_fire",
+    "draw": "minego:item.famas.draw",
+    "clipout": "minego:item.famas.clipout",
+    "clipin": "minego:item.famas.clipin",
+    "boltforward": "minego:item.famas.boltforward"
+  },
+  "textures": {
+    "default" : "minego:textures/guns/aug/aug_default.png"
+  },
+  "modules": {
+    "attachments": {
+      "ntgl:scope": [
+        {
+          "name": "scope",
+          "item": "minego:small_scope",
+          "hide": [
+            "scope_def"
+          ],
+          "xOffset": 0.1,
+          "yOffset": 0.9
+        },
+        {
+          "name": "scope_2",
+          "item": "minego:scope",
+          "hide": [
+            "scope_def"
+          ],
+          "fovModifier": 0.9
+        },
+        {
+          "name": "scope_3",
+          "item": "minego:advanced_scope",
+          "hide": [
+            "scope_def"
+          ],
+          "fovModifier": 1.2
+        },
+        {
+          "name": "scope_4",
+          "item": "minego:hunt_scope",
+          "hide": [
+            "scope_def"
+          ],
+          "fovModifier": 1.9
+        }
+      ],"ntgl:barrel": [
+        {
+          "name": "barrel_1",
+          "item": "minego:silencer",
+          "hide": [
+            "muzzle_flash"
+          ]
+        },
+        {
+          "name": "barrel_2",
+          "item": "minego:long_barrel",
+          "hide": [
+            "barrel_def"
+          ]
+        },
+        {
+          "name": "barrel_3",
+          "item": "minego:flash_hidder",
+          "hide": [
+            "muzzle_flash"
+          ]
+        },
+        {
+          "name": "barrel_4",
+          "item": "minego:tank_barrel"
+        }
+      ],
+      "minego:charm": [
+        {
+          "name": "charm_1",
+          "item": "minego:flat_charm",
+          "hide": [
+            "charm_2",
+            "charm_3",
+            "charm_4",
+            "charm_5"
+          ]
+        },
+        {
+          "name": "charm_5",
+          "item": "minego:chicken_charm",
+          "hide": [
+            "charm_2",
+            "charm_3",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_3",
+          "item": "minego:lilbro_charm",
+          "hide": [
+            "charm_2",
+            "charm_5",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_2",
+          "item": "minego:lilfrag_charm",
+          "hide": [
+            "charm_3",
+            "charm_5",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_4",
+          "item": "minego:acryl_charm",
+          "hide": [
+            "charm_3",
+            "charm_5",
+            "charm_2",
+            "charm_1"
+          ]
+        }
+      ],
+      "ntgl:under_barrel": [
+        {
+          "name": "grip_1",
+          "item": "minego:tripod"
+        },
+        {
+          "name": "grip_2",
+          "item": "minego:tactical_grip"
+        },
+        {
+          "name": "grip_3",
+          "item": "minego:spec_grip"
+        }
+      ]
+    }
+  }
+}

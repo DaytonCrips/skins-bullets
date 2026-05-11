@@ -1,0 +1,111 @@
+{
+  "name": "collection.arms_deal2",
+  "drop_rate": 0.6,
+  "price": "",
+  "skins": {
+    "skin_0": {
+      "gun": "minego:famas",
+      "rarity": "common",
+      "skin_name": "hexane",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "gunsmith"
+    },
+    "skin_1": {
+      "gun": "minego:p250",
+      "rarity": "common",
+      "skin_name": "hive",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_2": {
+      "gun": "minego:tec9",
+      "rarity": "common",
+      "skin_name": "bluetitanium",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "patina"
+    },
+    "skin_3": {
+      "gun": "minego:m4a1s",
+      "rarity": "common",
+      "skin_name": "bloodtiger",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "gunsmith"
+    },
+    "skin_4": {
+      "gun": "minego:scar20",
+      "rarity": "common",
+      "skin_name": "crimsonweb",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_5": {
+      "gun": "minego:nova",
+      "rarity": "uncommon",
+      "skin_name": "graphite",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_6": {
+      "gun": "minego:mp9",
+      "rarity": "uncommon",
+      "skin_name": "hypnotic",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "patina"
+    },
+    "skin_7": {
+      "gun": "minego:fiveseven",
+      "rarity": "uncommon",
+      "skin_name": "casehard",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "patina"
+    },
+    "skin_8": {
+      "gun": "minego:berreta",
+      "rarity": "uncommon",
+      "skin_name": "hemoglobin",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_9": {
+      "gun": "minego:usp",
+      "rarity": "rare",
+      "skin_name": "serum",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_10": {
+      "gun": "minego:p90",
+      "rarity": "rare",
+      "skin_name": "coldblooded",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "patina"
+    },
+    "skin_11": {
+      "gun": "minego:ssg08",
+      "rarity": "ultra_rare",
+      "skin_name": "bloodinwater",
+      "contracted": false,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_7_1": {
+      "gun": "minego:fiveseven",
+      "rarity": "uncommon",
+      "skin_name": "casehard_rare",
+      "contracted": true,
+      "secret": true,
+      "wear_type": "patina"
+    }
+  }
+}

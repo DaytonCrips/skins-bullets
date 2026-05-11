@@ -1,0 +1,42 @@
+{
+  "general": {
+    "weaponMode": "ntgl:melee",
+    "gripType": "ntgl:hammer",
+    "equipTime": 14,
+    "enchantable": false,
+    "renderHud": false,
+    "melee": true
+  },
+  "melee": {
+    "mode": "ntgl:single",
+    "damage": 7,
+    "delay": 4,
+    "cooldown": 12,
+    "distance": 3,
+    "angle": 70,
+    "maxTargets": 6,
+    "knockback": 0.4
+  },
+  "textures": {
+    "default" : "minego:textures/guns/kerambit/kerambit_default.png",
+    "alumi" : "minego:textures/guns/kerambit/kerambit_alumi.png",
+    "bluesteel" : "minego:textures/guns/kerambit/kerambit_bluesteel.png",
+    "casehard" : "minego:textures/guns/kerambit/kerambit_casehard.png",
+    "casehard_rare" : "minego:textures/guns/kerambit/kerambit_casehard_rare.png",
+    "crimsonweb" : "minego:textures/guns/kerambit/kerambit_crimsonweb.png",
+    "patina" : "minego:textures/guns/kerambit/kerambit_patina.png",
+    "forest" : "minego:textures/guns/kerambit/kerambit_forest.png",
+    "night" : "minego:textures/guns/kerambit/kerambit_night.png",
+    "safari_mesh" : "minego:textures/guns/kerambit/kerambit_safarimesh.png",
+    "scorched" : "minego:textures/guns/kerambit/kerambit_scorched.png",
+    "slaughter" : "minego:textures/guns/kerambit/kerambit_slaughter.png"
+  },
+  "animations": {
+    "ntgl:melee": "nukacraft:katana_hit"
+  },
+  "sounds": {
+    "equip": "minego:item.knife.equip",
+    "melee_swing": "minego:item.knife.slash",
+    "inspect": "minego:item.knife.inspect"
+  }
+}

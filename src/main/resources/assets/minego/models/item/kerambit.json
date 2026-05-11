@@ -1,0 +1,49 @@
+{
+  "credit": "NukaTeam's Work",
+  "parent": "builtin/entity",
+  "loader": "minego:gun_icon_loader",
+  "textures": {
+    "base": "minego:item/dynamic/kerambit/kerambit_default",
+    "particle": "minego:item/dynamic/kerambit/kerambit_default"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [
+        0,
+        6,
+        1.5
+      ],
+      "scale": [
+        0.81,
+        0.81,
+        0.81
+      ]
+    },
+    "firstperson_righthand": {
+      "translation": [
+        -4.25,
+        10,
+        0.5
+      ]
+    },
+    "gui": {
+      "rotation": [
+        0,
+        0,
+        45
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        6,
+        -1.5
+      ],
+      "scale": [
+        0.37,
+        0.37,
+        0.37
+      ]
+    }
+  }
+}
