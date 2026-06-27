@@ -67,6 +67,22 @@
       "secret": false,
       "wear_type": "patina"
     },
+    "skin_7_2": {
+      "gun": "minego:fiveseven",
+      "rarity": "uncommon",
+      "skin_name": "casehard2",
+      "contracted": true,
+      "secret": true,
+      "wear_type": "patina"
+    },
+    "skin_7_3": {
+      "gun": "minego:fiveseven",
+      "rarity": "uncommon",
+      "skin_name": "casehard3",
+      "contracted": true,
+      "secret": true,
+      "wear_type": "patina"
+    },
     "skin_8": {
       "gun": "minego:berreta",
       "rarity": "uncommon",

@@ -36,7 +36,7 @@ public class SkinsCollection {
 
 
     public ItemStack getRandomSkin(){
-        GunSkin skin = getItemSkin();
+        GunSkin skin = getWeightItem();
         assert skin != null;
         if (skin.getGun().equals("gold")) {
             SkinsCollection collection = SkinManager.getCollection(skin.getSkin_name());
@@ -55,10 +55,11 @@ public class SkinsCollection {
     }
 
     public static String getRandomWear() {
-        return WEARS[RANDOM.nextInt(WEARS.length)];
+        //return WEARS[RANDOM.nextInt(WEARS.length)];
+        return "gn";
     }
 
-    private GunSkin getItemSkin() {
+    private GunSkin getWeightItem() {
         if (SKINS.isEmpty()) {
             return null;
         }
@@ -82,6 +83,13 @@ public class SkinsCollection {
             }
         }
         return SKINS.get(0);
+    }
+
+    private GunSkin getRandomItem() {
+        if (SKINS.isEmpty()) {
+            return null;
+        }
+        return SKINS.get(RANDOM.nextInt(SKINS.size()));
     }
 
 }

@@ -39,16 +39,12 @@
   },
   "textures": {
     "default" : "minego:textures/guns/deagle/deagle_default.png",
-    "heirloom" : "minego:textures/guns/deagle/deagle_heirloom.png"
+    "heirloom" : "minego:textures/guns/deagle/deagle_heirloom.png",
+    "hypnotic" : "minego:textures/guns/deagle/deagle_hypnotic.png",
+    "crimsonweb" : "minego:textures/guns/deagle/deagle_crimsonweb.png"
   },
   "modules": {
     "attachments": {
-      "minego:stattrak": [
-        {
-          "name": "stattrack",
-          "item": "minego:stattrak"
-        }
-      ],
       "minego:charm": [
         {
           "name": "charm_1",

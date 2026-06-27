@@ -13,7 +13,7 @@
     "equipTime": 27,
     "recoilAdsReduction": 0.45,
     "alwaysSpread": true,
-    "spread": 1.0,
+    "spread": 3.0,
     "ammo": [
       "minego:common_ammo"
     ]
@@ -39,6 +39,69 @@
     "boltpull": "minego:item.ak47.boltpull"
   },
   "textures": {
-    "default" : "minego:textures/guns/ak47/ak47_default.png"
+    "default" : "minego:textures/guns/ak47/ak47_default.png",
+    "casehard" : "minego:textures/guns/ak47/ak47_casehard.png",
+    "casehard2" : "minego:textures/guns/ak47/ak47_casehard2.png",
+    "casehard3" : "minego:textures/guns/ak47/ak47_casehard3.png",
+    "casehard_rare" : "minego:textures/guns/ak47/ak47_casehard_rare.png",
+    "arabesque" : "minego:textures/guns/ak47/ak47_arabesque.png",
+    "black_laminate" : "minego:textures/guns/ak47/ak47_black_laminate.png",
+    "red_laminate" : "minego:textures/guns/ak47/ak47_red_laminate.png"
+  },
+  "modules": {
+    "attachments": {
+      "minego:charm": [
+        {
+          "name": "charm_1",
+          "item": "minego:flat_charm",
+          "hide": [
+            "charm_2",
+            "charm_3",
+            "charm_4",
+            "charm_5"
+          ]
+        },
+        {
+          "name": "charm_5",
+          "item": "minego:chicken_charm",
+          "hide": [
+            "charm_2",
+            "charm_3",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_3",
+          "item": "minego:lilbro_charm",
+          "hide": [
+            "charm_2",
+            "charm_5",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_2",
+          "item": "minego:lilfrag_charm",
+          "hide": [
+            "charm_3",
+            "charm_5",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_4",
+          "item": "minego:acryl_charm",
+          "hide": [
+            "charm_3",
+            "charm_5",
+            "charm_2",
+            "charm_1"
+          ]
+        }
+      ]
+    }
   }
 }

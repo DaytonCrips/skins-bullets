@@ -1,0 +1,103 @@
+{
+  "name": "collection.arms_deal2",
+  "drop_rate": 0.6,
+  "price": "",
+  "skins": {
+    "skin_0": {
+      "gun": "minego:aug",
+      "rarity": "common",
+      "skin_name": "wings",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_1": {
+      "gun": "minego:mp7",
+      "rarity": "common",
+      "skin_name": "skulls",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_2": {
+      "gun": "minego:sg553",
+      "rarity": "common",
+      "skin_name": "ultraviolet",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_3": {
+      "gun": "minego:m4a1s",
+      "rarity": "uncommon",
+      "skin_name": "dark_water",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "patina"
+    },
+    "skin_4": {
+      "gun": "minego:usp",
+      "rarity": "uncommon",
+      "skin_name": "dark_water",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "patina"
+    },
+    "skin_5": {
+      "gun": "minego:glock",
+      "rarity": "uncommon",
+      "skin_name": "dragon_tattoo",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "patina"
+    },
+    "skin_6": {
+      "gun": "minego:deagle",
+      "rarity": "rare",
+      "skin_name": "hypnotic",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "patina"
+    },
+    "skin_7": {
+      "gun": "minego:ak47",
+      "rarity": "rare",
+      "skin_name": "casehard",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "patina"
+    },
+    "skin_7_1": {
+      "gun": "minego:ak47",
+      "rarity": "rare",
+      "skin_name": "casehard2",
+      "contracted": true,
+      "secret": true,
+      "wear_type": "patina"
+    },
+    "skin_7_2": {
+      "gun": "minego:ak47",
+      "rarity": "rare",
+      "skin_name": "casehard3",
+      "contracted": true,
+      "secret": true,
+      "wear_type": "patina"
+    },
+    "skin_8": {
+      "gun": "minego:awp",
+      "rarity": "ultra_rare",
+      "skin_name": "lightning_strike",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_7_3": {
+      "gun": "minego:ak47",
+      "rarity": "rare",
+      "skin_name": "casehard_rare",
+      "contracted": true,
+      "secret": true,
+      "wear_type": "patina"
+    }
+  }
+}

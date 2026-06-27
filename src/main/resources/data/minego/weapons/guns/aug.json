@@ -13,7 +13,7 @@
     "equipTime": 37,
     "recoilAdsReduction": 1.95,
     "alwaysSpread": true,
-    "spread": 1.5,
+    "spread": 2.5,
     "ammo": [
       "minego:common_ammo"
     ]
@@ -37,7 +37,7 @@
         "action": "ntgl:scope"
       },
       "zoom": {
-        "offset": [ -0.1, -1.6, 4.0],
+        "offset": [ 0.1, -0.7, 4.0],
         "fovModifier": 0.7
       }
     }
@@ -51,69 +51,17 @@
     "boltforward": "minego:item.famas.boltforward"
   },
   "textures": {
-    "default" : "minego:textures/guns/aug/aug_default.png"
+    "default" : "minego:textures/guns/aug/aug_default.png",
+    "wings" : "minego:textures/guns/aug/aug_wings.png",
+    "ultraviolet" : "minego:textures/guns/aug/aug_ultraviolet.png",
+    "hotrod" : "minego:textures/guns/aug/aug_hotrod.png"
   },
   "modules": {
     "attachments": {
       "ntgl:scope": [
         {
           "name": "scope",
-          "item": "minego:small_scope",
-          "hide": [
-            "scope_def"
-          ],
-          "xOffset": 0.1,
-          "yOffset": 0.9
-        },
-        {
-          "name": "scope_2",
-          "item": "minego:scope",
-          "hide": [
-            "scope_def"
-          ],
-          "fovModifier": 0.9
-        },
-        {
-          "name": "scope_3",
-          "item": "minego:advanced_scope",
-          "hide": [
-            "scope_def"
-          ],
-          "fovModifier": 1.2
-        },
-        {
-          "name": "scope_4",
-          "item": "minego:hunt_scope",
-          "hide": [
-            "scope_def"
-          ],
-          "fovModifier": 1.9
-        }
-      ],"ntgl:barrel": [
-        {
-          "name": "barrel_1",
-          "item": "minego:silencer",
-          "hide": [
-            "muzzle_flash"
-          ]
-        },
-        {
-          "name": "barrel_2",
-          "item": "minego:long_barrel",
-          "hide": [
-            "barrel_def"
-          ]
-        },
-        {
-          "name": "barrel_3",
-          "item": "minego:flash_hidder",
-          "hide": [
-            "muzzle_flash"
-          ]
-        },
-        {
-          "name": "barrel_4",
-          "item": "minego:tank_barrel"
+          "item": "minego:advanced_scope"
         }
       ],
       "minego:charm": [
@@ -166,20 +114,6 @@
             "charm_2",
             "charm_1"
           ]
-        }
-      ],
-      "ntgl:under_barrel": [
-        {
-          "name": "grip_1",
-          "item": "minego:tripod"
-        },
-        {
-          "name": "grip_2",
-          "item": "minego:tactical_grip"
-        },
-        {
-          "name": "grip_3",
-          "item": "minego:spec_grip"
         }
       ]
     }

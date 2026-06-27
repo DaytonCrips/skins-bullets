@@ -15,7 +15,7 @@
     "equipTime": 17,
     "recoilAdsReduction": 0.45,
     "alwaysSpread": true,
-    "spread": 1.5,
+    "spread": 2.2,
     "ammo": [
       "minego:primary_ammo"
     ]
@@ -42,16 +42,11 @@
   },
   "textures": {
     "default" : "minego:textures/guns/mp9/mp9_default.png",
-    "hypnotic" : "minego:textures/guns/mp9/mp9_hypnotic.png"
+    "hypnotic" : "minego:textures/guns/mp9/mp9_hypnotic.png",
+    "hotrod" : "minego:textures/guns/mp9/mp9_hotrod.png"
   },
   "modules": {
     "attachments": {
-      "minego:stattrak": [
-        {
-          "name": "stattrak",
-          "item": "minego:stattrak"
-        }
-      ],
       "minego:charm": [
         {
           "name": "charm_1",
@@ -101,41 +96,6 @@
             "charm_5",
             "charm_2",
             "charm_1"
-          ]
-        }
-      ],
-      "ntgl:barrel": [
-        {
-          "name": "barrel_2",
-          "item": "minego:long_barrel"
-        },
-        {
-          "name": "barrel_1",
-          "item": "minego:silencer",
-          "hide": [
-            "muzzle_flash"
-          ]
-        },
-        {
-          "name": "barrel_3",
-          "item": "minego:flash_hidder",
-          "hide": [
-            "muzzle_flash"
-          ]
-        }
-      ],
-      "ntgl:scope": [
-        {
-          "name": "scope_1",
-          "item": "minego:small_scope"
-        }
-      ],
-      "ntgl:magazine": [
-        {
-          "name": "mag_1",
-          "item": "minego:pistol_mag",
-          "hide": [
-            "mag_def"
           ]
         }
       ]

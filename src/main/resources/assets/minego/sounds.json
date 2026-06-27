@@ -26,6 +26,8 @@
 
   "item.cz75.fire":         { "subtitle": "subtitle.ntgl.draw",  "sounds": [{ "name": "minego:item/cz75/fire" }]},
 
+  "item.zeus.fire":         { "subtitle": "subtitle.ntgl.draw",  "sounds": [{ "name": "minego:item/zeus/fire" }]},
+
   "item.deagle.fire":         { "subtitle": "subtitle.ntgl.draw",  "sounds": [{ "name": "minego:item/deagle/fire" }]},
   "item.deagle.clipin":         { "subtitle": "subtitle.ntgl.clipin",  "sounds": [{ "name": "minego:item/deagle/clipin" }]},
   "item.deagle.clipout":         { "subtitle": "subtitle.ntgl.clipout",  "sounds": [{ "name": "minego:item/deagle/clipout" }]},

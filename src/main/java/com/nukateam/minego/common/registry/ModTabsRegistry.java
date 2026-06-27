@@ -22,7 +22,7 @@ public class ModTabsRegistry {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MinecraftGo.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> CSMINE_TAB = createTab("csmine_items",
-            ModItems.TOKEN_ARMS_DEAL2::get, ModTabsRegistry::getWeaponTab);
+            ModItems.CAPSULE_DREAMHACK14::get, ModTabsRegistry::getWeaponTab);
 
 
     private static void getWeaponTab(CreativeModeTab.ItemDisplayParameters itemDisplayParameters, CreativeModeTab.Output output) {

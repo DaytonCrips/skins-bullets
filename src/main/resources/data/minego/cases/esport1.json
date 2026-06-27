@@ -1,0 +1,79 @@
+{
+  "name": "collection.arms_deal2",
+  "drop_rate": 0.6,
+  "price": "",
+  "skins": {
+    "skin_0": {
+      "gun": "minego:mag7",
+      "rarity": "common",
+      "skin_name": "orange_ddpat",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_1": {
+      "gun": "minego:m4a4",
+      "rarity": "common",
+      "skin_name": "faded_zebra",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_2": {
+      "gun": "minego:famas",
+      "rarity": "common",
+      "skin_name": "doomkitty",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_3": {
+      "gun": "minego:sawedoff",
+      "rarity": "uncommon",
+      "skin_name": "orange_ddpat",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_4": {
+      "gun": "minego:p250",
+      "rarity": "uncommon",
+      "skin_name": "splash",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_5": {
+      "gun": "minego:galil",
+      "rarity": "uncommon",
+      "skin_name": "orange_ddpat",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_6": {
+      "gun": "minego:awp",
+      "rarity": "rare",
+      "skin_name": "boom",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_7": {
+      "gun": "minego:ak47",
+      "rarity": "rare",
+      "skin_name": "red_laminate",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "patina"
+    },
+    "skin_8": {
+      "gun": "minego:p90",
+      "rarity": "ultra_rare",
+      "skin_name": "death_by_kitty",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    }
+  }
+}

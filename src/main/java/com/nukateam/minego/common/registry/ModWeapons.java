@@ -14,10 +14,18 @@ public class ModWeapons {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MinecraftGo.MOD_ID);
 
     public static final RegistryObject<WeaponItem> AK47 = registerGun("ak47");
-
+    public static final RegistryObject<WeaponItem> GALIL = registerGun("galil");
+    public static final RegistryObject<WeaponItem> MP5SD = registerGun("mp5sd");
+    public static final RegistryObject<WeaponItem> G3SG1 = registerGun("g3sg1");
+    public static final RegistryObject<WeaponItem> R8 = registerGun("r8");
+    public static final RegistryObject<WeaponItem> BIZON = registerGun("bizon");
+    public static final RegistryObject<WeaponItem> NEGEV = registerGun("negev");
+    public static final RegistryObject<WeaponItem> M249 = registerGun("m249");
     public static final RegistryObject<WeaponItem> FAMAS = registerGun("famas");
     public static final RegistryObject<WeaponItem> P250 = registerGun("p250");
     public static final RegistryObject<WeaponItem> CZ75 = registerGun("cz75");
+    public static final RegistryObject<WeaponItem> UMP45 = registerGun("ump45");
+    public static final RegistryObject<WeaponItem> ZEUS = registerGun("zeus");
     public static final RegistryObject<WeaponItem> P2000 = registerGun("p2000");
     public static final RegistryObject<WeaponItem> SAWED = registerGun("sawedoff");
     public static final RegistryObject<WeaponItem> DEAGLE = registerGun("deagle");
@@ -25,10 +33,15 @@ public class ModWeapons {
     public static final RegistryObject<WeaponItem> BERRETA = registerGun("berreta");
     public static final RegistryObject<WeaponItem> TEC9 = registerGun("tec9");
     public static final RegistryObject<WeaponItem> M4A1S = registerGun("m4a1s");
+    public static final RegistryObject<WeaponItem> M4A4 = registerGun("m4a4");
+    public static final RegistryObject<WeaponItem> MAG7 = registerGun("mag7");
     public static final RegistryObject<WeaponItem> NOVA = registerGun("nova");
+    public static final RegistryObject<WeaponItem> XM1014 = registerGun("xm1014");
     public static final RegistryObject<WeaponItem> FIVESEVEN = registerGun("fiveseven");
     public static final RegistryObject<WeaponItem> USP = registerGun("usp");
     public static final RegistryObject<WeaponItem> MP9 = registerGun("mp9");
+    public static final RegistryObject<WeaponItem> MAC10 = registerGun("mac10");
+    public static final RegistryObject<WeaponItem> MP7 = registerGun("mp7");
     public static final RegistryObject<WeaponItem> P90 = registerGun("p90");
     public static final RegistryObject<WeaponItem> SCAR20 = registerGun("scar20");
     public static final RegistryObject<WeaponItem> SSG08 = registerGun("ssg08");

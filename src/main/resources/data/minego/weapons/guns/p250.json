@@ -12,7 +12,7 @@
     "equipTime": 37,
     "recoilAdsReduction": 0.45,
     "alwaysSpread": true,
-    "spread": 1.0,
+    "spread": 1.5,
     "ammo": [
       "minego:primary_ammo"
     ]
@@ -41,16 +41,11 @@
   "textures": {
     "default" : "minego:textures/guns/p250/p250_default.png",
     "hive" : "minego:textures/guns/p250/p250_hive.png",
-    "undertow" : "minego:textures/guns/p250/p250_undertow.png"
+    "undertow" : "minego:textures/guns/p250/p250_undertow.png",
+    "splash" : "minego:textures/guns/p250/p250_splash.png"
   },
   "modules": {
     "attachments": {
-      "minego:stattrak": [
-        {
-          "name": "stattrack",
-          "item": "minego:stattrak"
-        }
-      ],
       "minego:charm": [
         {
           "name": "charm_1",
@@ -100,42 +95,6 @@
             "charm_5",
             "charm_2",
             "charm_1"
-          ]
-        }
-      ],
-      "ntgl:barrel": [
-        {
-          "name": "barrel_2",
-          "item": "minego:long_barrel"
-        },
-        {
-          "name": "barrel_1",
-          "item": "minego:silencer",
-          "hide": [
-            "muzzle_flash"
-          ]
-        },
-        {
-          "name": "barrel_3",
-          "item": "minego:flash_hidder",
-          "hide": [
-            "muzzle_flash"
-          ]
-        }
-      ],
-      "ntgl:scope": [
-        {
-          "name": "scope_1",
-          "item": "minego:small_scope",
-          "offset": [ 0, 0.25, 0]
-        }
-      ],
-      "ntgl:magazine": [
-        {
-          "name": "mag_1",
-          "item": "minego:pistol_mag",
-          "hide": [
-            "mag_def"
           ]
         }
       ]

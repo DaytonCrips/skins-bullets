@@ -15,14 +15,12 @@ import org.joml.Vector3f;
 public class WeaponTooltipRender {
     private final GuiGraphics CONTEXT;
     private ItemStack stack = ItemStack.EMPTY;
-    private float seconds = 0f;
     public WeaponTooltipRender(GuiGraphics context) {
         this.CONTEXT = context;
     }
 
-    public void define(ItemStack stack, float seconds) {
+    public void define(ItemStack stack) {
         this.stack = stack;
-        this.seconds = seconds;
     }
 
     public ItemStack stack() {
@@ -52,20 +50,6 @@ public class WeaponTooltipRender {
     }
 
 
-
-    public void renderItem(Vector3f rot, Vector3f scale) {
-        push(() -> {
-            translate(0, 0, 500);
-            scale(scale.x, scale.y, scale.z);
-            mul(Axis.XP.rotationDegrees(rot.x));
-            mul(Axis.YP.rotationDegrees(rot.y));
-            mul(Axis.ZP.rotationDegrees(rot.z));
-            push(() -> {
-                translate(-8, -8, -150);
-                context().renderItem(stack, 0, 0);
-            });
-        });
-    }
 
     public void fillGradient(int x, int y, int width, int height, int start, int end) {
         context().fillGradient(x, y, x + width, y + height, start, end);

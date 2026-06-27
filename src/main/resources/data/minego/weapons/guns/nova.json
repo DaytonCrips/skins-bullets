@@ -18,17 +18,6 @@
       "minego:common_ammo"
     ]
   },
-  "modes": {
-    "ntgl:secondary": {
-      "general": {
-        "action": "ntgl:scope"
-      },
-      "zoom": {
-        "offset": [ -0.1, -3.0, 4.0],
-        "fovModifier": 0.7
-      }
-    }
-  },
   "ammoData": {
     "minego:common_ammo": {
       "ammo": {
@@ -52,7 +41,11 @@
   },
   "textures": {
     "default" : "minego:textures/guns/nova/nova_default.png",
-    "graphite" : "minego:textures/guns/nova/nova_graphite.png"
+    "graphite" : "minego:textures/guns/nova/nova_graphite.png",
+    "green_apple" : "minego:textures/guns/nova/nova_green_apple.png",
+    "candy_apple" : "minego:textures/guns/nova/nova_candy_apple.png",
+    "ultraviolet" : "minego:textures/guns/nova/nova_ultraviolet.png",
+    "bloodtiger" : "minego:textures/guns/nova/nova_blood_tiger.png"
   },
   "modules": {
     "attachments": {
@@ -106,61 +99,6 @@
             "charm_2",
             "charm_1"
           ]
-        }
-      ],
-      "ntgl:scope": [
-        {
-          "name": "scope_1",
-          "item": "minego:small_scope",
-          "hide": [
-            "scope_def"
-          ],
-          "yOffset": 0.4
-        },
-        {
-          "name": "scope_2",
-          "item": "minego:scope",
-          "hide": [
-            "scope_def"
-          ]
-        },
-        {
-          "name": "scope_3",
-          "item": "minego:advanced_scope",
-          "hide": [
-            "scope_def"
-          ]
-        },
-        {
-          "name": "scope_4",
-          "item": "minego:hunt_scope",
-          "hide": [
-            "scope_def"
-          ]
-        }
-      ],
-      "ntgl:barrel": [
-        {
-          "name": "barrel_1",
-          "item": "minego:silencer",
-          "hide": [
-            "muzzle_flash"
-          ]
-        },
-        {
-          "name": "barrel_2",
-          "item": "minego:long_barrel"
-        },
-        {
-          "name": "barrel_3",
-          "item": "minego:flash_hidder",
-          "hide": [
-            "muzzle_flash"
-          ]
-        },
-        {
-          "name": "barrel_4",
-          "item": "minego:tank_barrel"
         }
       ]
     }

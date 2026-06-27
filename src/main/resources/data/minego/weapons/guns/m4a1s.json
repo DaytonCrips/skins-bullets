@@ -5,12 +5,12 @@
     "fireMode": ["ntgl:auto"],
     "rate": 3,
     "gripType": "ntgl:two_handed",
-    "maxAmmo": 12,
+    "maxAmmo": 20,
     "reloadTime": 45,
     "reloadAmount": 3,
     "recoilAngle": 3.2,
     "recoilKick": 1.2,
-    "equipTime": 27,
+    "equipTime": 20,
     "recoilAdsReduction": 0.45,
     "alwaysSpread": true,
     "spread": 1.0,
@@ -31,17 +31,6 @@
       }
     }
   },
-  "modes": {
-    "ntgl:secondary": {
-      "general": {
-        "action": "ntgl:scope"
-      },
-      "zoom": {
-        "offset": [ 0, 1, 4.0],
-        "fovModifier": 0.7
-      }
-    }
-  },
   "sounds": {
     "fire": "minego:item.m4a1s.fire",
     "silencedFire": "minego:item.m4a1s.silenced_fire",
@@ -52,7 +41,9 @@
   },
   "textures": {
     "default" : "minego:textures/guns/m4a1s/m4a1s_default.png",
-    "bloodtiger" : "minego:textures/guns/m4a1s/m4a1s_bloodtiger.png"
+    "bloodtiger" : "minego:textures/guns/m4a1s/m4a1s_bloodtiger.png",
+    "dark_water" : "minego:textures/guns/m4a1s/m4a1s_dark_water.png",
+    "hotrod" : "minego:textures/guns/m4a1s/m4a1s_hotrod.png"
   },
   "modules": {
     "attachments": {
@@ -108,98 +99,12 @@
           ]
         }
       ],
-      "ntgl:scope": [
-        {
-          "name": "scope_1",
-          "item": "minego:small_scope",
-          "hide": [
-            "scope_def"
-          ],
-          "yOffset": -1
-        },
-        {
-          "name": "scope_2",
-          "item": "minego:scope",
-          "hide": [
-            "scope_def"
-          ]
-        },
-        {
-          "name": "scope_3",
-          "item": "minego:advanced_scope",
-          "hide": [
-            "scope_def"
-          ]
-        },
-        {
-          "name": "scope_4",
-          "item": "minego:hunt_scope",
-          "hide": [
-            "scope_def"
-          ]
-        }
-      ],
       "ntgl:barrel": [
         {
           "name": "silencer",
           "item": "minego:silencer",
           "hide": [
             "muzzle_flash"
-          ]
-        },
-        {
-          "name": "barrel_2",
-          "item": "minego:long_barrel",
-          "hide": [
-            "barrel_def"
-          ]
-        },
-        {
-          "name": "barrel_3",
-          "item": "minego:flash_hidder",
-          "hide": [
-            "muzzle_flash"
-          ]
-        },
-        {
-          "name": "barrel_4",
-          "item": "minego:tank_barrel"
-        }
-      ],
-      "ntgl:grip": [
-        {
-          "name": "stock_1",
-          "item": "minego:tactical_stock"
-        },
-        {
-          "name": "stock_2",
-          "item": "minego:light_stock"
-        },
-        {
-          "name": "stock_3",
-          "item": "minego:heavy_stock"
-        }
-      ],
-      "ntgl:under_barrel": [
-        {
-          "name": "grip_1",
-          "item": "minego:tripod"
-        },
-        {
-          "name": "grip_2",
-          "item": "minego:tactical_grip"
-        },
-        {
-          "name": "grip_3",
-          "item": "minego:spec_grip"
-        }
-      ],
-      "ntgl:magazine": [
-        {
-          "name": "mag_1",
-          "item": "minego:rifle_mag",
-          "hide": [
-            "mag_def"
           ]
         }
       ]

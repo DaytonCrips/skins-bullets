@@ -1,0 +1,50 @@
+{
+  "name": "collection.arms_deal2",
+  "drop_rate": 0.6,
+  "price": "",
+  "skins": {
+    "skin_0": {
+      "gun": "minego:xm1014",
+      "rarity": "consumer",
+      "skin_name": "urban_perf",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },"skin_1": {
+      "gun": "minego:mac10",
+      "rarity": "consumer",
+      "skin_name": "urban_ddpat",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },"skin_2": {
+      "gun": "minego:bizon",
+      "rarity": "basic",
+      "skin_name": "carbon_fiber",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },"skin_3": {
+      "gun": "minego:p90",
+      "rarity": "common",
+      "skin_name": "glacier_mesh",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },"skin_4": {
+      "gun": "minego:ak47",
+      "rarity": "common",
+      "skin_name": "black_laminate",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "patina"
+    },"skin_5": {
+      "gun": "minego:berreta",
+      "rarity": "uncommon",
+      "skin_name": "demolition",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    }
+  }
+}

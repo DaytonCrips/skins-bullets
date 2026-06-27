@@ -13,7 +13,7 @@
     "equipTime": 30,
     "recoilAdsReduction": 0.45,
     "alwaysSpread": true,
-    "spread": 1.0,
+    "spread": 2.3,
     "ammo": [
       "minego:common_ammo"
     ]
@@ -41,16 +41,12 @@
   },
   "textures": {
     "default" : "minego:textures/guns/famas/famas_default.png",
-    "hexane"    : "minego:textures/guns/famas/famas_hexane.png"
+    "hexane"    : "minego:textures/guns/famas/famas_hexane.png",
+    "dark_water"    : "minego:textures/guns/famas/famas_dark_water.png",
+    "doomkitty"    : "minego:textures/guns/famas/famas_doomkitty.png"
   },
   "modules": {
     "attachments": {
-      "minego:stattrak": [
-        {
-          "name": "stattrack",
-          "item": "minego:stattrak"
-        }
-      ],
       "minego:charm": [
         {
           "name": "charm_1",
@@ -100,42 +96,6 @@
             "charm_5",
             "charm_2",
             "charm_1"
-          ]
-        }
-      ],
-      "ntgl:barrel": [
-        {
-          "name": "barrel_1",
-          "item": "minego:silencer",
-          "hide": [
-            "muzzle_flash"
-          ]
-        },
-        {
-          "name": "barrel_2",
-          "item": "minego:long_barrel",
-          "hide": [
-            "barrel_def"
-          ]
-        },
-        {
-          "name": "barrel_3",
-          "item": "minego:flash_hidder",
-          "hide": [
-            "muzzle_flash"
-          ]
-        },
-        {
-          "name": "barrel_4",
-          "item": "minego:tank_barrel"
-        }
-      ],
-      "ntgl:magazine": [
-        {
-          "name": "mag_1",
-          "item": "minego:rifle_mag",
-          "hide": [
-            "mag_def"
           ]
         }
       ]

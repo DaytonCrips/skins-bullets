@@ -15,7 +15,7 @@
     "equipTime": 38,
     "recoilAdsReduction": 0.25,
     "alwaysSpread": true,
-    "spread": 1.5,
+    "spread": 2.8,
     "ammo": [
       "minego:common_ammo"
     ]
@@ -43,16 +43,12 @@
   },
   "textures": {
     "default" : "minego:textures/guns/p90/p90_default.png",
-    "coldblooded" : "minego:textures/guns/p90/p90_coldblooded.png"
+    "coldblooded" : "minego:textures/guns/p90/p90_coldblooded.png",
+    "glacier_mesh" : "minego:textures/guns/p90/p90_glacier_mesh.png",
+    "death_by_kitty" : "minego:textures/guns/p90/p90_death_by_kitty.png"
   },
   "modules": {
     "attachments": {
-      "minego:stattrak": [
-        {
-          "name": "stattrack",
-          "item": "minego:stattrak"
-        }
-      ],
       "minego:charm": [
         {
           "name": "charm_1",
@@ -103,33 +99,6 @@
             "charm_2",
             "charm_1"
           ]
-        }
-      ],
-      "ntgl:barrel": [
-        {
-          "name": "barrel_1",
-          "item": "minego:silencer",
-          "hide": [
-            "muzzle_flash"
-          ]
-        },
-        {
-          "name": "barrel_2",
-          "item": "minego:long_barrel",
-          "hide": [
-            "barrel_def"
-          ]
-        },
-        {
-          "name": "barrel_3",
-          "item": "minego:flash_hidder",
-          "hide": [
-            "muzzle_flash"
-          ]
-        },
-        {
-          "name": "barrel_4",
-          "item": "minego:tank_barrel"
         }
       ]
     }

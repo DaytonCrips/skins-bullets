@@ -21,6 +21,8 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> ITEM_KNIFE_EQUIP = register("item.knife.equip");
 
 
+    public static final RegistryObject<SoundEvent> ITEM_ZEUS_FIRE = register("item.zeus.fire");
+
     public static final RegistryObject<SoundEvent> ITEM_CZ75_FIRE = register("item.cz75.fire");
     public static final RegistryObject<SoundEvent> ITEM_DEAGLE_FIRE = register("item.deagle.fire");
     public static final RegistryObject<SoundEvent> ITEM_DEAGLE_DRAW = register("item.deagle.draw");

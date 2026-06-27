@@ -1,0 +1,102 @@
+{
+  "general": {
+    "action": "ntgl:gun",
+    "enchantable": false,
+    "rate": 11,
+    "gripType": "ntgl:two_handed",
+    "loadingType": "ntgl:per_cartridge",
+    "maxAmmo": 7,
+    "reloadTime": 18,
+    "reloadAmount": 1,
+    "equipTime": 27,
+    "recoilAngle": 15.0,
+    "recoilKick": 1,
+    "recoilAdsReduction": 0.6,
+    "alwaysSpread": true,
+    "spread": 10.0,
+    "ammo": [
+      "minego:common_ammo"
+    ]
+  },
+  "ammoData": {
+    "minego:common_ammo": {
+      "ammo": {
+        "type": "ntgl:buckshot"
+      },
+      "projectile":{
+        "damage": 13.0,
+        "size": 1.0,
+        "speed": 10.0,
+        "life": 5,
+        "projectileAmount": 6
+      }
+    }
+  },
+  "sounds": {
+    "fire": "minego:item.nova.fire",
+    "silencedFire": "minego:item.default.shotgun_silencedfire",
+    "draw": "minego:item.nova.equip",
+    "slide": "minego:item.nova.slide",
+    "shell": "minego:item.nova.shell"
+  },
+  "textures": {
+    "default" : "minego:textures/guns/xm1014/xm1014_default.png",
+    "urban_perf" : "minego:textures/guns/xm1014/xm1014_urban_perf.png"
+  },
+  "modules": {
+    "attachments": {
+      "minego:charm": [
+        {
+          "name": "charm_1",
+          "item": "minego:flat_charm",
+          "hide": [
+            "charm_2",
+            "charm_3",
+            "charm_4",
+            "charm_5"
+          ]
+        },
+        {
+          "name": "charm_5",
+          "item": "minego:chicken_charm",
+          "hide": [
+            "charm_2",
+            "charm_3",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_3",
+          "item": "minego:lilbro_charm",
+          "hide": [
+            "charm_2",
+            "charm_5",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_2",
+          "item": "minego:lilfrag_charm",
+          "hide": [
+            "charm_3",
+            "charm_5",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_4",
+          "item": "minego:acryl_charm",
+          "hide": [
+            "charm_3",
+            "charm_5",
+            "charm_2",
+            "charm_1"
+          ]
+        }
+      ]
+    }
+  }
+}

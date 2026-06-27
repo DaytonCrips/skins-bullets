@@ -12,7 +12,7 @@
     "equipTime": 37,
     "recoilAdsReduction": 0.65,
     "alwaysSpread": true,
-    "spread": 1.0,
+    "spread": 1.4,
     "ammo": [
       "minego:primary_ammo"
     ]
@@ -40,16 +40,11 @@
   },
   "textures": {
     "default" : "minego:textures/guns/glock/glock_default.png",
-    "bluefissure" : "minego:textures/guns/glock/glock_bluefissure.png"
+    "bluefissure" : "minego:textures/guns/glock/glock_bluefissure.png",
+    "dragon_tattoo" : "minego:textures/guns/glock/glock_dragon_tattoo.png"
   },
   "modules": {
     "attachments": {
-      "minego:stattrak": [
-        {
-          "name": "stattrack",
-          "item": "minego:stattrak"
-        }
-      ],
       "minego:charm": [
         {
           "name": "charm_1",
@@ -99,42 +94,6 @@
             "charm_5",
             "charm_2",
             "charm_1"
-          ]
-        }
-      ],
-      "ntgl:barrel": [
-        {
-          "name": "barrel_2",
-          "item": "minego:long_barrel"
-        },
-        {
-          "name": "barrel_1",
-          "item": "minego:silencer",
-          "hide": [
-            "muzzle_flash"
-          ]
-        },
-        {
-          "name": "barrel_3",
-          "item": "minego:flash_hidder",
-          "hide": [
-            "muzzle_flash"
-          ]
-        }
-      ],
-      "ntgl:scope": [
-        {
-          "name": "scope_1",
-          "item": "minego:small_scope",
-          "offset": [ 0, 0.5, 0]
-        }
-      ],
-      "ntgl:magazine": [
-        {
-          "name": "mag_1",
-          "item": "minego:pistol_mag",
-          "hide": [
-            "mag_def"
           ]
         }
       ]

@@ -1,5 +1,6 @@
 {
   "credit": "NukaTeam's Work",
+  "gui_light": "front",
   "parent": "builtin/entity",
   "texture_size": [
     320,
@@ -45,11 +46,6 @@
       ]
     },
     "ground": {
-      "rotation": [
-        32,
-        3,
-        0
-      ],
       "translation": [
         0,
         1.5,
@@ -85,9 +81,14 @@
         0
       ],
       "translation": [
-        9.25,
-        -5.75,
-        -2
+        14.25,
+        -7.75,
+        -3.4
+      ],
+      "scale": [
+        1.4,
+        1.4,
+        1.4
       ]
     }
   }

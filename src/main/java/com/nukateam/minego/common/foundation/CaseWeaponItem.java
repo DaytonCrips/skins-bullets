@@ -107,7 +107,7 @@ public class CaseWeaponItem extends WeaponItem {
         String wear = StackUtils.getWearValue(item);
         String paint = StackUtils.getWearType(item);
         list.add(Component.translatable("tooltip.paintjob." + paint).withStyle(ChatFormatting.GRAY));
-//        list.add(Component.translatable("tooltip.wear." + wear).withStyle(ChatFormatting.GRAY));
+        list.add(Component.translatable("tooltip.wear." + wear).withStyle(ChatFormatting.GRAY));
 //        if (Screen.hasShiftDown()) {
 //            list.add(Component.translatable("tooltip.paintjob." + paint).withStyle(ChatFormatting.GRAY));
 //            list.add(Component.translatable("tooltip.wear." + wear).withStyle(ChatFormatting.GRAY));

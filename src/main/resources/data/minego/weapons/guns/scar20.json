@@ -13,7 +13,7 @@
     "equipTime": 27,
     "recoilAdsReduction": 1.45,
     "alwaysSpread": true,
-    "spread": 1.0,
+    "spread": 1.4,
     "ammo": [
       "minego:common_ammo"
     ]
@@ -37,7 +37,7 @@
         "action": "ntgl:scope"
       },
       "zoom": {
-        "offset": [ -0.5, 0.1, 4.0],
+        "offset": [ -0.1, 1.8, 4.0],
         "fovModifier": 0.7
       }
     }
@@ -59,38 +59,7 @@
       "ntgl:scope": [
         {
           "name": "scope",
-          "item": "minego:small_scope",
-          "hide": [
-            "scope_def"
-          ],
-          "xOffset": 0.1,
-          "yOffset": 0.9
-        }
-      ],"ntgl:barrel": [
-        {
-          "name": "barrel_1",
-          "item": "minego:silencer",
-          "hide": [
-            "muzzle_flash"
-          ]
-        },
-        {
-          "name": "barrel_2",
-          "item": "minego:long_barrel",
-          "hide": [
-            "barrel_def"
-          ]
-        },
-        {
-          "name": "barrel_3",
-          "item": "minego:flash_hidder",
-          "hide": [
-            "muzzle_flash"
-          ]
-        },
-        {
-          "name": "barrel_4",
-          "item": "minego:tank_barrel"
+          "item": "minego:hunt_scope"
         }
       ],
       "minego:charm": [
@@ -143,20 +112,6 @@
             "charm_2",
             "charm_1"
           ]
-        }
-      ],
-      "ntgl:under_barrel": [
-        {
-          "name": "grip_1",
-          "item": "minego:tripod"
-        },
-        {
-          "name": "grip_2",
-          "item": "minego:tactical_grip"
-        },
-        {
-          "name": "grip_3",
-          "item": "minego:spec_grip"
         }
       ]
     }

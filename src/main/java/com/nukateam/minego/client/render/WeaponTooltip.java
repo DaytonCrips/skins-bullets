@@ -27,8 +27,7 @@ public class WeaponTooltip {
     private static TooltipFormat renderStyle = null;
 
     private static ItemStack renderStack = ItemStack.EMPTY;
-    private static long tooltipStartMillis = 0;
-    private static float tooltipSeconds = 0f;
+
 
 
     public static boolean build(WeaponTooltipRender renderer, ItemStack stack, Font font, List<ClientTooltipComponent> components, int x, int y, ClientTooltipPositioner positioner) {
@@ -37,9 +36,9 @@ public class WeaponTooltip {
         } else return false;
         if (renderStyle == null || components.isEmpty()) return false;
 
-        renderer.define(renderStack, tooltipSeconds);
-        String wearString = StackUtils.getWearValue(stack);
-        final Component wear = Component.translatable("tooltip.wear." + wearString);
+        renderer.define(renderStack);
+        String collectionString = StackUtils.getCollection(stack);
+        final Component wear = Component.translatable("tooltip.sign." + collectionString);
         final Point size = calcSize(font, components, wear);
         final Vector2ic rawPos = positioner.positionTooltip(renderer.width(), renderer.height(), x, y, size.x, size.y);
         final Vec2 pos = new Vec2(rawPos.x(), rawPos.y());
@@ -92,14 +91,11 @@ public class WeaponTooltip {
     private static void resetTooltip() {
         if (renderStyle != null) renderStyle.reset();
         renderStyle = null;
-        tooltipStartMillis = System.currentTimeMillis();
-        tooltipSeconds = 0f;
     }
 
     private static void updateStyle(ItemStack stack) {
         if (stack.isEmpty()) resetTooltip();
         else {
-            tooltipSeconds = (System.currentTimeMillis() - tooltipStartMillis) / 1000f;
             if (stack == renderStack) return;
             resetTooltip();
             renderStack = stack;

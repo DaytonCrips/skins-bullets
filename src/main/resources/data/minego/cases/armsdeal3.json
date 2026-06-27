@@ -1,0 +1,103 @@
+{
+  "name": "collection.arms_deal2",
+  "drop_rate": 0.6,
+  "price": "",
+  "skins": {
+    "skin_0": {
+      "gun": "minego:usp",
+      "rarity": "common",
+      "skin_name": "stainless",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "patina"
+    },
+    "skin_1": {
+      "gun": "minego:p2000",
+      "rarity": "common",
+      "skin_name": "red_fragcam",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_2": {
+      "gun": "minego:glock",
+      "rarity": "common",
+      "skin_name": "bluefissure",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_3": {
+      "gun": "minego:berreta",
+      "rarity": "common",
+      "skin_name": "panther",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_4": {
+      "gun": "minego:cz75",
+      "rarity": "common",
+      "skin_name": "crimsonweb",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_5": {
+      "gun": "minego:tec9",
+      "rarity": "uncommon",
+      "skin_name": "titaniumbit",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "patina"
+    },
+    "skin_6": {
+      "gun": "minego:fiveseven",
+      "rarity": "uncommon",
+      "skin_name": "coppergalaxy",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "patina"
+    },
+    "skin_7": {
+      "gun": "minego:deagle",
+      "rarity": "uncommon",
+      "skin_name": "heirloom",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "patina"
+    },
+    "skin_8": {
+      "gun": "minego:cz75",
+      "rarity": "uncommon",
+      "skin_name": "treadplate",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "patina"
+    },
+    "skin_9": {
+      "gun": "minego:p250",
+      "rarity": "rare",
+      "skin_name": "undertow",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "wear"
+    },
+    "skin_10": {
+      "gun": "minego:cz75",
+      "rarity": "rare",
+      "skin_name": "fuscianew",
+      "contracted": true,
+      "secret": false,
+      "wear_type": "patina"
+    },
+    "skin_11": {
+      "gun": "minego:cz75",
+      "rarity": "ultra_rare",
+      "skin_name": "victoria",
+      "contracted": false,
+      "secret": false,
+      "wear_type": "patina"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "general": {
+    "action": "ntgl:gun",
+    "enchantable": false,
+    "rate": 200,
+    "gripType": "ntgl:two_handed",
+    "maxAmmo": 1,
+    "reloadTime": 65,
+    "reloadAmount": 1,
+    "recoilAngle": 0,
+    "recoilKick": 0,
+    "recoilAdsReduction": 0,
+    "alwaysSpread": true,
+    "equipTime": 37,
+    "spread": 1,
+    "ammo": [
+      "minego:primary_ammo"
+    ]
+  },
+  "ammoData": {
+    "minego:primary_ammo": {
+      "ammo": {
+        "type": "ntgl:energetic"
+      },
+      "projectile":{
+        "projectile": "ntgl:tesla",
+        "damageType": "ntgl:energy",
+        "damage": 27.0,
+        "size": 0.2,
+        "speed": 4,
+        "life": 2,
+        "color": 65484
+      }
+    }
+  },
+  "sounds": {
+    "fire": "minego:item.zeus.fire",
+    "equip": "minego:item.deagle.equip"
+  },
+  "textures": {
+    "default" : "minego:textures/guns/zeus/zeus_default.png"
+  },
+  "modules": {
+    "attachments": {
+      "minego:charm": [
+        {
+          "name": "charm_1",
+          "item": "minego:flat_charm",
+          "hide": [
+            "charm_2",
+            "charm_3",
+            "charm_4",
+            "charm_5"
+          ]
+        },
+        {
+          "name": "charm_5",
+          "item": "minego:chicken_charm",
+          "hide": [
+            "charm_2",
+            "charm_3",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_3",
+          "item": "minego:lilbro_charm",
+          "hide": [
+            "charm_2",
+            "charm_5",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_2",
+          "item": "minego:lilfrag_charm",
+          "hide": [
+            "charm_3",
+            "charm_5",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_4",
+          "item": "minego:acryl_charm",
+          "hide": [
+            "charm_3",
+            "charm_5",
+            "charm_2",
+            "charm_1"
+          ]
+        }
+      ]
+    }
+  }
+}

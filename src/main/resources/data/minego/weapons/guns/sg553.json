@@ -13,7 +13,7 @@
     "equipTime": 27,
     "recoilAdsReduction": 0.45,
     "alwaysSpread": true,
-    "spread": 1.0,
+    "spread": 2.4,
     "ammo": [
       "minego:common_ammo"
     ]
@@ -31,6 +31,17 @@
       }
     }
   },
+  "modes": {
+  "ntgl:secondary": {
+    "general": {
+      "action": "ntgl:scope"
+    },
+    "zoom": {
+      "offset": [ -1.1, -0.1, 4.0],
+      "fovModifier": 0.7
+    }
+  }
+},
   "sounds": {
     "fire": "minego:item.famas.fire",
     "silencedFire": "minego:item.m4a1s.silenced_fire",
@@ -40,6 +51,70 @@
     "boltforward": "minego:item.famas.boltforward"
   },
   "textures": {
-    "default" : "minego:textures/guns/sg553/sg553_default.png"
+    "default" : "minego:textures/guns/sg553/sg553_default.png",
+    "ultraviolet" : "minego:textures/guns/sg553/sg553_ultraviolet.png",
+    "hypnotic" : "minego:textures/guns/sg553/sg553_hypnotic.png"
+  },
+  "modules": {
+    "attachments": {
+      "ntgl:scope": [
+        {
+          "name": "scope",
+          "item": "minego:advanced_scope"
+        }
+      ],
+      "minego:charm": [
+        {
+          "name": "charm_1",
+          "item": "minego:flat_charm",
+          "hide": [
+            "charm_2",
+            "charm_3",
+            "charm_4",
+            "charm_5"
+          ]
+        },
+        {
+          "name": "charm_5",
+          "item": "minego:chicken_charm",
+          "hide": [
+            "charm_2",
+            "charm_3",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_3",
+          "item": "minego:lilbro_charm",
+          "hide": [
+            "charm_2",
+            "charm_5",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_2",
+          "item": "minego:lilfrag_charm",
+          "hide": [
+            "charm_3",
+            "charm_5",
+            "charm_4",
+            "charm_1"
+          ]
+        },
+        {
+          "name": "charm_4",
+          "item": "minego:acryl_charm",
+          "hide": [
+            "charm_3",
+            "charm_5",
+            "charm_2",
+            "charm_1"
+          ]
+        }
+      ]
+    }
   }
 }

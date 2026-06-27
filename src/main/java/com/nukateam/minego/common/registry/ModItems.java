@@ -32,18 +32,36 @@ public class ModItems {
     public static final RegistryObject<Item> ERASER = ITEMS.register("eraser",
             () -> new EraserItem(new Item.Properties().durability(10)));
 
-    public static final RegistryObject<Item> TOKEN_ARMS_DEAL1 = ITEMS.register("armsdeal1",
+//    public static final RegistryObject<Item> TOKEN_ARMS_DEAL1 = ITEMS.register("armsdeal1",
+//            () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
+//    public static final RegistryObject<Item> TOKEN_ARMS_DEAL2 = ITEMS.register("armsdeal2",
+//            () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
+//    public static final RegistryObject<Item> TOKEN_ARMS_DEAL3 = ITEMS.register("armsdeal3",
+//            () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
+//    public static final RegistryObject<Item> TOKEN_ARMS_DEAL4 = ITEMS.register("armsdeal4",
+//            () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
+
+    public static final RegistryObject<Item> CAPSULE_DREAMHACK14 = ITEMS.register("capsule_dreamhack2014",
             () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
-    public static final RegistryObject<Item> TOKEN_ARMS_DEAL2 = ITEMS.register("armsdeal2",
+    public static final RegistryObject<Item> CAPSULE_KATOWICE14 = ITEMS.register("capsule_katowice2014",
             () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
-    public static final RegistryObject<Item> TOKEN_ARMS_DEAL3 = ITEMS.register("armsdeal3",
+    public static final RegistryObject<Item> CAPSULE_KATOWICE15 = ITEMS.register("capsule_katowice2015",
             () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
-    public static final RegistryObject<Item> TOKEN_ARMS_DEAL4 = ITEMS.register("armsdeal4",
+    public static final RegistryObject<Item> CAPSULE_STICKER1 = ITEMS.register("capsule_sticker1",
             () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
-//    public static final RegistryObject<Item> CASE_ARMS_DEAL1 = ITEMS.register("case_armsdeal1",
-//            () -> new LootBoxItem("armsdeal2", new Item.Properties().rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> CAPSULE_STICKER2 = ITEMS.register("capsule_sticker2",
+            () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
+
+    public static final RegistryObject<Item> CASE_ = ITEMS.register("case_",
+            () -> new LootBoxItem("vertigo", new Item.Properties().rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> CASE_1 = ITEMS.register("case_1",
+            () -> new LootBoxItem("esport1", new Item.Properties().rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> CASE_ARMS_DEAL1 = ITEMS.register("case_armsdeal1",
+            () -> new LootBoxItem("armsdeal1", new Item.Properties().rarity(Rarity.RARE)));
     public static final RegistryObject<Item> CASE_ARMS_DEAL2 = ITEMS.register("case_armsdeal2",
             () -> new LootBoxItem("armsdeal2", new Item.Properties().rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> CASE_ARMS_DEAL3 = ITEMS.register("case_armsdeal3",
+            () -> new LootBoxItem("armsdeal3", new Item.Properties().rarity(Rarity.RARE)));
 //    public static final RegistryObject<Item> CASE_ARMS_DEAL3 = ITEMS.register("case_armsdeal3",
 //            () -> new LootBoxItem("knifes_1t_1s", new Item.Properties().rarity(Rarity.RARE)));
 //    public static final RegistryObject<Item> CASE_ARMS_DEAL4 = ITEMS.register("case_armsdeal4",
@@ -53,52 +71,52 @@ public class ModItems {
             () -> new BarrelItem(Barrel.create(6.0F, CsMineGunModifiers.SILENCED),
                     new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> LONG_BARREL = ITEMS.register("long_barrel",
-            () -> new BarrelItem(Barrel.create(3.0F, CsMineGunModifiers.LONG_BARREL),
-                    new Item.Properties().stacksTo(1)));
+//    public static final RegistryObject<Item> LONG_BARREL = ITEMS.register("long_barrel",
+//            () -> new BarrelItem(Barrel.create(3.0F, CsMineGunModifiers.LONG_BARREL),
+//                    new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> TANK_BARREL = ITEMS.register("tank_barrel",
-            () -> new BarrelItem(Barrel.create(3.0F, CsMineGunModifiers.TANK_BARREL),
-                    new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> FLASH_HIDDER = ITEMS.register("flash_hidder",
-            () -> new BarrelItem(Barrel.create(0.0F, CsMineGunModifiers.FLASH_HIDER),
-                    new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> SCOPE = ITEMS.register("scope",
-            () -> new ScopeItem(CsMineGunModifiers.SCOPE,
-                    new Item.Properties().stacksTo(1)));
+//    public static final RegistryObject<Item> TANK_BARREL = ITEMS.register("tank_barrel",
+//            () -> new BarrelItem(Barrel.create(3.0F, CsMineGunModifiers.TANK_BARREL),
+//                    new Item.Properties().stacksTo(1)));
+//    public static final RegistryObject<Item> FLASH_HIDDER = ITEMS.register("flash_hidder",
+//            () -> new BarrelItem(Barrel.create(0.0F, CsMineGunModifiers.FLASH_HIDER),
+//                    new Item.Properties().stacksTo(1)));
+//    public static final RegistryObject<Item> SCOPE = ITEMS.register("scope",
+//            () -> new ScopeItem(CsMineGunModifiers.SCOPE,
+//                    new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> ADV_SCOPE = ITEMS.register("advanced_scope",
             () -> new ScopeItem(CsMineGunModifiers.ADV_SCOPE,
                     new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> HUNT_SCOPE = ITEMS.register("hunt_scope",
             () -> new ScopeItem(CsMineGunModifiers.HUNT_SCOPE,
                     new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> SMALL_SCOPE = ITEMS.register("small_scope",
-            () -> new ScopeItem(CsMineGunModifiers.SHORT_SCOPE,
-                    new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> RIFLE_MAG = ITEMS.register("rifle_mag",
-            () -> new MagazineItem(Magazine.create(10, CsMineGunModifiers.RIFLE_MAG), new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> PISTOL_MAG = ITEMS.register("pistol_mag",
-            () -> new MagazineItem(Magazine.create(10, CsMineGunModifiers.PISTOL_MAG), new Item.Properties().stacksTo(1)));
-
-    public static final RegistryObject<Item> TRIPOD = ITEMS.register("tripod",
-            () -> new UnderBarrelItem(UnderBarrel.create(),
-                    new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> SPEC_GRIP = ITEMS.register("spec_grip",
-            () -> new UnderBarrelItem(UnderBarrel.create(),
-                    new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> TACTICAL_GRIP = ITEMS.register("tactical_grip",
-            () -> new UnderBarrelItem(UnderBarrel.create(),
-                    new Item.Properties().stacksTo(1)));
-
-    public static final RegistryObject<Item> TACTICAL_STOCK = ITEMS.register("tactical_stock",
-            () -> new GripItem(Grip.create(),
-                    new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> HEAVY_STOCK = ITEMS.register("heavy_stock",
-            () -> new GripItem(Grip.create(),
-                    new Item.Properties().stacksTo(1)));
-    public static final RegistryObject<Item> LIGHT_STOCK = ITEMS.register("light_stock",
-            () -> new GripItem(Grip.create(),
-                    new Item.Properties().stacksTo(1)));
+//    public static final RegistryObject<Item> SMALL_SCOPE = ITEMS.register("small_scope",
+//            () -> new ScopeItem(CsMineGunModifiers.SHORT_SCOPE,
+//                    new Item.Properties().stacksTo(1)));
+//    public static final RegistryObject<Item> RIFLE_MAG = ITEMS.register("rifle_mag",
+//            () -> new MagazineItem(Magazine.create(10, CsMineGunModifiers.RIFLE_MAG), new Item.Properties().stacksTo(1)));
+//    public static final RegistryObject<Item> PISTOL_MAG = ITEMS.register("pistol_mag",
+//            () -> new MagazineItem(Magazine.create(10, CsMineGunModifiers.PISTOL_MAG), new Item.Properties().stacksTo(1)));
+//
+//    public static final RegistryObject<Item> TRIPOD = ITEMS.register("tripod",
+//            () -> new UnderBarrelItem(UnderBarrel.create(),
+//                    new Item.Properties().stacksTo(1)));
+//    public static final RegistryObject<Item> SPEC_GRIP = ITEMS.register("spec_grip",
+//            () -> new UnderBarrelItem(UnderBarrel.create(),
+//                    new Item.Properties().stacksTo(1)));
+//    public static final RegistryObject<Item> TACTICAL_GRIP = ITEMS.register("tactical_grip",
+//            () -> new UnderBarrelItem(UnderBarrel.create(),
+//                    new Item.Properties().stacksTo(1)));
+//
+//    public static final RegistryObject<Item> TACTICAL_STOCK = ITEMS.register("tactical_stock",
+//            () -> new GripItem(Grip.create(),
+//                    new Item.Properties().stacksTo(1)));
+//    public static final RegistryObject<Item> HEAVY_STOCK = ITEMS.register("heavy_stock",
+//            () -> new GripItem(Grip.create(),
+//                    new Item.Properties().stacksTo(1)));
+//    public static final RegistryObject<Item> LIGHT_STOCK = ITEMS.register("light_stock",
+//            () -> new GripItem(Grip.create(),
+//                    new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> STATTRAK = ITEMS.register("stattrak",
             () -> new AttachmentItem(CsMineAttachmentTypes.STATTRAK,
                     GenericAttachment.create(),

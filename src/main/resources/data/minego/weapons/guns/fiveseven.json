@@ -12,7 +12,7 @@
     "equipTime": 37,
     "recoilAdsReduction": 0.65,
     "alwaysSpread": true,
-    "spread": 1.0,
+    "spread": 1.7,
     "ammo": [
       "minego:primary_ammo"
     ]
@@ -41,17 +41,13 @@
   "textures": {
     "default" : "minego:textures/guns/fiveseven/fiveseven_default.png",
     "casehard" : "minego:textures/guns/fiveseven/fiveseven_casehard.png",
+    "casehard2" : "minego:textures/guns/fiveseven/fiveseven_casehard2.png",
+    "casehard3" : "minego:textures/guns/fiveseven/fiveseven_casehard3.png",
     "casehard_rare" : "minego:textures/guns/fiveseven/fiveseven_casehard_rare.png",
     "coppergalaxy" : "minego:textures/guns/fiveseven/fiveseven_coppergalaxy.png"
   },
   "modules": {
     "attachments": {
-      "minego:stattrak": [
-        {
-          "name": "stattrack",
-          "item": "minego:stattrak"
-        }
-      ],
       "minego:charm": [
         {
           "name": "charm_1",
@@ -101,42 +97,6 @@
             "charm_5",
             "charm_2",
             "charm_1"
-          ]
-        }
-      ],
-      "ntgl:barrel": [
-        {
-          "name": "barrel_2",
-          "item": "minego:long_barrel"
-        },
-        {
-          "name": "barrel_1",
-          "item": "minego:silencer",
-          "hide": [
-            "muzzle_flash"
-          ]
-        },
-        {
-          "name": "barrel_3",
-          "item": "minego:flash_hidder",
-          "hide": [
-            "muzzle_flash"
-          ]
-        }
-      ],
-      "ntgl:scope": [
-        {
-          "name": "scope_1",
-          "item": "minego:small_scope",
-          "yOffset": 0.3
-        }
-      ],
-      "ntgl:magazine": [
-        {
-          "name": "mag_1",
-          "item": "minego:pistol_mag",
-          "hide": [
-            "mag_def"
           ]
         }
       ]

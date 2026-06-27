@@ -37,7 +37,7 @@
         "action": "ntgl:scope"
       },
       "zoom": {
-        "offset": [ 0.6, -1.0, 4.0],
+        "offset": [ 0.6, 0.2, 4.0],
         "fovModifier": 0.7
       }
     }
@@ -51,69 +51,17 @@
     "boltforward": "minego:item.awp.boltforward"
   },
   "textures": {
-    "default" : "minego:textures/guns/awp/awp_default.png"
+    "default" : "minego:textures/guns/awp/awp_default.png",
+    "lightning_strike" : "minego:textures/guns/awp/awp_lightning_strike.png",
+    "graphite" : "minego:textures/guns/awp/awp_graphite.png",
+    "boom" : "minego:textures/guns/awp/awp_boom.png"
   },
   "modules": {
     "attachments": {
       "ntgl:scope": [
         {
           "name": "scope",
-          "item": "minego:small_scope",
-          "hide": [
-            "scope_def"
-          ],
-          "xOffset": 0.1,
-          "yOffset": 0.9
-        },
-        {
-          "name": "scope_2",
-          "item": "minego:scope",
-          "hide": [
-            "scope_def"
-          ],
-          "fovModifier": 0.9
-        },
-        {
-          "name": "scope_3",
-          "item": "minego:advanced_scope",
-          "hide": [
-            "scope_def"
-          ],
-          "fovModifier": 1.2
-        },
-        {
-          "name": "scope_4",
-          "item": "minego:hunt_scope",
-          "hide": [
-            "scope_def"
-          ],
-          "fovModifier": 1.9
-        }
-      ],"ntgl:barrel": [
-        {
-          "name": "barrel_1",
-          "item": "minego:silencer",
-          "hide": [
-            "muzzle_flash"
-          ]
-        },
-        {
-          "name": "barrel_2",
-          "item": "minego:long_barrel",
-          "hide": [
-            "barrel_def"
-          ]
-        },
-        {
-          "name": "barrel_3",
-          "item": "minego:flash_hidder",
-          "hide": [
-            "muzzle_flash"
-          ]
-        },
-        {
-          "name": "barrel_4",
-          "item": "minego:tank_barrel"
+          "item": "minego:hunt_scope"
         }
       ],
       "minego:charm": [
@@ -166,20 +114,6 @@
             "charm_2",
             "charm_1"
           ]
-        }
-      ],
-      "ntgl:under_barrel": [
-        {
-          "name": "grip_1",
-          "item": "minego:tripod"
-        },
-        {
-          "name": "grip_2",
-          "item": "minego:tactical_grip"
-        },
-        {
-          "name": "grip_3",
-          "item": "minego:spec_grip"
         }
       ]
     }

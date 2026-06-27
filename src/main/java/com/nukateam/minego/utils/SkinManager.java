@@ -109,6 +109,7 @@ public class SkinManager extends SimplePreparableReloadListener<Map<String, Skin
             case "ultra_rare" : return Style.EMPTY.withColor(0xeb4b4b);
             case "contraband" : return Style.EMPTY.withColor(0xffc815);
             case "limited" : return Style.EMPTY.withColor(0xf6c976);
+            case "prototype" : return Style.EMPTY.withColor(0x58c815);
             default: return Style.EMPTY.withColor(0xe1e8f0);
         }
     }
@@ -122,6 +123,7 @@ public class SkinManager extends SimplePreparableReloadListener<Map<String, Skin
             case "ultra_rare" : return 0xFFeb4b4b;
             case "contraband" : return 0xFFffc815;
             case "limited" : return 0xFFf6c976;
+            case "prototype" : return 0xFF58c815;
             default: return 0xFFe1e8f0;
         }
     }

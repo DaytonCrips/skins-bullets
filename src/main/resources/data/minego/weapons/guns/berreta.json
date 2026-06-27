@@ -11,21 +11,11 @@
     "recoilKick": 1.9,
     "recoilAdsReduction": 0.65,
     "alwaysSpread": true,
-    "spread": 1.0,
+    "equipTime": 37,
+    "spread": 1.6,
     "ammo": [
       "minego:primary_ammo"
     ]
-  },
-  "modes": {
-    "ntgl:secondary": {
-      "general": {
-        "action": "ntgl:scope"
-      },
-      "zoom": {
-        "offset": [ -0.1, -2.3, 4.0],
-        "fovModifier": 0.7
-      }
-    }
   },
   "ammoData": {
     "minego:primary_ammo": {
@@ -51,16 +41,11 @@
   "textures": {
     "default" : "minego:textures/guns/berreta/berreta_default.png",
     "hemoglobin" : "minego:textures/guns/berreta/berreta_hemoglobin.png",
-    "panther" : "minego:textures/guns/berreta/berreta_panther.png"
+    "panther" : "minego:textures/guns/berreta/berreta_panther.png",
+    "demolition" : "minego:textures/guns/berreta/berreta_demolition.png"
   },
   "modules": {
     "attachments": {
-      "minego:stattrak": [
-        {
-          "name": "stattrack",
-          "item": "minego:stattrak"
-        }
-      ],
       "minego:charm": [
         {
           "name": "charm_1",
@@ -110,42 +95,6 @@
             "charm_5",
             "charm_2",
             "charm_1"
-          ]
-        }
-      ],
-      "ntgl:barrel": [
-        {
-          "name": "barrel_2",
-          "item": "minego:long_barrel"
-        },
-        {
-          "name": "barrel_1",
-          "item": "minego:silencer",
-          "hide": [
-            "muzzle_flash"
-          ]
-        },
-        {
-          "name": "barrel_3",
-          "item": "minego:flash_hidder",
-          "hide": [
-            "muzzle_flash"
-          ]
-        }
-      ],
-      "ntgl:scope": [
-        {
-          "name": "scope_1",
-          "item": "minego:small_scope",
-          "offset": [ 0, 0.5, 0]
-        }
-      ],
-      "ntgl:magazine": [
-        {
-          "name": "mag_1",
-          "item": "minego:pistol_mag",
-          "hide": [
-            "mag_def"
           ]
         }
       ]

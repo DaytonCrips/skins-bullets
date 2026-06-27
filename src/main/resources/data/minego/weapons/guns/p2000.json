@@ -12,7 +12,7 @@
     "equipTime": 37,
     "recoilAdsReduction": 0.45,
     "alwaysSpread": true,
-    "spread": 1.0,
+    "spread": 1.45,
     "ammo": [
       "minego:primary_ammo"
     ]
@@ -39,16 +39,11 @@
     "equip": "minego:item.berreta.equip"
   },
   "textures": {
-    "default" : "minego:textures/guns/p2000/p2000_default.png"
+    "default" : "minego:textures/guns/p2000/p2000_default.png",
+    "red_fragcam" : "minego:textures/guns/p2000/p2000_red_fragcam.png"
   },
   "modules": {
     "attachments": {
-      "minego:stattrak": [
-        {
-          "name": "stattrack",
-          "item": "minego:stattrak"
-        }
-      ],
       "minego:charm": [
         {
           "name": "charm_1",
@@ -98,42 +93,6 @@
             "charm_5",
             "charm_2",
             "charm_1"
-          ]
-        }
-      ],
-      "ntgl:barrel": [
-        {
-          "name": "barrel_2",
-          "item": "minego:long_barrel"
-        },
-        {
-          "name": "barrel_1",
-          "item": "minego:silencer",
-          "hide": [
-            "muzzle_flash"
-          ]
-        },
-        {
-          "name": "barrel_3",
-          "item": "minego:flash_hidder",
-          "hide": [
-            "muzzle_flash"
-          ]
-        }
-      ],
-      "ntgl:scope": [
-        {
-          "name": "scope_1",
-          "item": "minego:small_scope",
-          "offset": [ 0, 0.25, 0]
-        }
-      ],
-      "ntgl:magazine": [
-        {
-          "name": "mag_1",
-          "item": "minego:pistol_mag",
-          "hide": [
-            "mag_def"
           ]
         }
       ]

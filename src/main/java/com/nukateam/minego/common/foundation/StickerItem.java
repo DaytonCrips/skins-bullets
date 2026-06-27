@@ -40,7 +40,7 @@ public class StickerItem extends Item {
     @Override
     public void appendHoverText(ItemStack item, @Nullable Level level, List<Component> list, TooltipFlag flag) {
         super.appendHoverText(item, level, list, flag);
-        list.add(Component.translatable("sticker." + StackUtils.getVariant(item)));
+        list.add(Component.translatable("tooltip.sign." + StackUtils.getVariant(item)));
         list.add(Component.translatable("tooltip.sticker.use"));
     }
 }
