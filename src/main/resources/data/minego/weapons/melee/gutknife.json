@@ -7,6 +7,10 @@
     "equipTime": 15,
     "melee": true
   },
+  "display": {
+    "offset": [0, -9.0, 0.0],
+    "nonHandOffset": [0, 2.0, 0.0]
+  },
   "textures": {
     "default" : "minego:textures/guns/gutknife/gutknife_default.png",
     "casehard" : "minego:textures/guns/gutknife/gutknife_casehard.png",

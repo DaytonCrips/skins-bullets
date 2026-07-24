@@ -7,6 +7,10 @@
     "equipTime": 15,
     "melee": true
   },
+  "display": {
+    "offset": [0, -9.0, 0.0],
+    "nonHandOffset": [0, 2.0, 0.0]
+  },
   "textures": {
   "default" : "minego:textures/guns/flipknife/flipknife_default.png",
   "alumi" : "minego:textures/guns/flipknife/flipknife_alumi.png",
