@@ -11,9 +11,9 @@ import net.minecraft.server.packs.resources.Resource;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.server.packs.resources.SimplePreparableReloadListener;
 import net.minecraft.util.profiling.ProfilerFiller;
-import net.minecraftforge.event.AddReloadListenerEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.AddReloadListenerEvent;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -22,11 +22,10 @@ import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
-@Mod.EventBusSubscriber(modid = MinecraftGo.MOD_ID)
+@EventBusSubscriber(modid = MinecraftGo.MOD_ID)
 public class SkinManager extends SimplePreparableReloadListener<Map<String, SkinsCollection>> {
     private static SkinManager instance;
-    static Map<String, SkinsCollection> collectionList = new HashMap<>();
-
+    private static final Map<String, SkinsCollection> collectionList = new HashMap<>();
 
     @Override
     protected Map<String, SkinsCollection> prepare(ResourceManager resourceManager, ProfilerFiller profilerFiller) {
@@ -38,6 +37,13 @@ public class SkinManager extends SimplePreparableReloadListener<Map<String, Skin
 
     @Override
     protected void apply(Map<String, SkinsCollection> stringPipBoyArchivesMap, ResourceManager resourceManager, ProfilerFiller profilerFiller) {
+    }
+
+    @SubscribeEvent
+    public static void addReloadListenerEvent(AddReloadListenerEvent event) {
+        SkinManager manager = new SkinManager();
+        event.addListener(manager);
+        instance = manager;
     }
 
     public Map<String, SkinsCollection> loadData(ResourceManager manager) {
@@ -84,20 +90,11 @@ public class SkinManager extends SimplePreparableReloadListener<Map<String, Skin
         return collectionList;
     }
 
-
-    @SubscribeEvent
-    public static void addReloadListenerEvent(AddReloadListenerEvent event) {
-        SkinManager manager = new SkinManager();
-        event.addListener(manager);
-        instance = manager;
-    }
-
     private static String getFileNameFromLocation(ResourceLocation location) {
         String path = location.getPath();
         path = path.substring("cases/".length(), path.length() - 5);
         return path.replace('/', '.');
     }
-
 
     public static Style setRarityColor(String rarity) {
         switch (rarity) {
@@ -113,6 +110,7 @@ public class SkinManager extends SimplePreparableReloadListener<Map<String, Skin
             default: return Style.EMPTY.withColor(0xe1e8f0);
         }
     }
+
     public static int setRarityAlphaColor(String rarity) {
         switch (rarity) {
             case "consumer" : return 0xFFe1e8f0;
@@ -131,7 +129,6 @@ public class SkinManager extends SimplePreparableReloadListener<Map<String, Skin
     public static boolean containsCollection(String fileName) {
         return collectionList.containsKey(fileName);
     }
-
 
     public static Set<String> getAllFileNames() {
         return collectionList.keySet();

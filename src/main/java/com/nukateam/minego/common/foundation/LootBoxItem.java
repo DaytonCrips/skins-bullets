@@ -16,7 +16,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.registries.ForgeRegistries;
+
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -43,11 +43,9 @@ public class LootBoxItem extends Item {
         return super.use(pLevel, pPlayer, pUsedHand);
     }
 
-
-
     @Override
-    public void appendHoverText(ItemStack item, @Nullable Level level, List<Component> list, TooltipFlag flag) {
-        super.appendHoverText(item, level, list, flag);
+    public void appendHoverText(ItemStack item, TooltipContext context, List<Component> list, TooltipFlag flag) {
+        super.appendHoverText(item, context, list, flag);
         SkinsCollection collection = SkinManager.getCollection(case_collection);
         list.add(Component.translatable("case.collection.desc"));
 

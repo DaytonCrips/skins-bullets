@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
-import software.bernie.geckolib.core.animatable.GeoAnimatable;
+import software.bernie.geckolib.animatable.GeoAnimatable;
 import software.bernie.geckolib.renderer.GeoRenderer;
 import software.bernie.geckolib.renderer.layer.GeoRenderLayer;
 
@@ -18,7 +18,7 @@ import java.util.HashMap;
 
 public class CharmedLayer<T extends GeoAnimatable> extends GeoRenderLayer<T> {
     public static HashMap<ResourceLocation, Boolean> textures = new HashMap();
-    public  CharmedLayer(GeoRenderer<T> entityRendererIn) {
+    public CharmedLayer(GeoRenderer<T> entityRendererIn) {
         super(entityRendererIn);
     }
 
@@ -34,13 +34,15 @@ public class CharmedLayer<T extends GeoAnimatable> extends GeoRenderLayer<T> {
         }
     }
 
-    protected void renderLayer(PoseStack poseStack, T animatable, BakedGeoModel bakedModel, MultiBufferSource bufferSource, float partialTick, int packedLight, ResourceLocation texture) {
+    protected void renderLayer(PoseStack poseStack, T animatable, BakedGeoModel bakedModel, MultiBufferSource bufferSource,
+                               float partialTick, int packedLight, ResourceLocation texture) {
         RenderType renderTypeNew = RenderType.entityCutout(texture);
         poseStack.pushPose();
         poseStack.translate(-0.5, -0.5, -0.5);
         poseStack.translate(0.0, -0.01, 0.0);
         poseStack.translate((double) ClientDebug.X / 100.0 / 16.0, (double)ClientDebug.Y / 100.0 / 16.0, (double)ClientDebug.Z / 10.0 / 16.0);
-        this.getRenderer().reRender(bakedModel, poseStack, bufferSource, animatable, renderTypeNew, bufferSource.getBuffer(renderTypeNew), partialTick, packedLight, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F, 1.0F, 1.0F);
+        this.getRenderer().reRender(bakedModel, poseStack, bufferSource, animatable, renderTypeNew, bufferSource.getBuffer(renderTypeNew),
+                partialTick, packedLight, OverlayTexture.NO_OVERLAY, 0XFFFFFFFF);
         poseStack.popPose();
     }
 }

@@ -8,11 +8,12 @@ import com.nukateam.ntgl.common.data.attachment.impl.Scope;
 import com.nukateam.ntgl.common.util.interfaces.IWeaponModifier;
 import net.minecraft.resources.ResourceLocation;
 
-public class CsMineGunModifiers {
+import static com.nukateam.minego.MinecraftGo.mineGoResource;
 
-    public static final ResourceLocation SCOPE_LOCATION =  new ResourceLocation(MinecraftGo.MOD_ID, "textures/misc/scope_overlay.png");
-    public static final ResourceLocation ADVSCOPE_LOCATION =  new ResourceLocation(MinecraftGo.MOD_ID, "textures/misc/adv_scope_overlay.png");
-    public static final ResourceLocation HUNTSCOPE_LOCATION =  new ResourceLocation(MinecraftGo.MOD_ID, "textures/misc/hunt_scope_overlay.png");
+public class CsMineGunModifiers {
+    public static final ResourceLocation SCOPE_LOCATION     = mineGoResource("textures/misc/scope_overlay.png");
+    public static final ResourceLocation ADVSCOPE_LOCATION  = mineGoResource("textures/misc/adv_scope_overlay.png");
+    public static final ResourceLocation HUNTSCOPE_LOCATION = mineGoResource("textures/misc/hunt_scope_overlay.png");
 
     public static final IWeaponModifier SILENCED = new IWeaponModifier() {
         @Override
@@ -57,7 +58,7 @@ public class CsMineGunModifiers {
     public static final IWeaponModifier RIFLE_MAG = new IWeaponModifier() {
         @Override
         public int modifyMaxAmmo(int maxAmmo, WeaponData data) {
-            return (int) (maxAmmo * 2);
+            return maxAmmo * 2;
         }
     };
 
@@ -67,6 +68,7 @@ public class CsMineGunModifiers {
             return (int) (maxAmmo * 1.5);
         }
     };
+
     public static final IWeaponModifier TANK_BARREL = new IWeaponModifier() {
         @Override
         public float modifyProjectileSpread(float spread, WeaponData data) {

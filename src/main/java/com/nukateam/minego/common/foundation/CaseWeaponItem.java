@@ -19,13 +19,10 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.Tag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
-
-import net.minecraft.world.inventory.tooltip.TooltipComponent;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.common.util.Lazy;
+import net.neoforged.jarjar.nio.util.Lazy;
 import org.jetbrains.annotations.Nullable;
-
 import java.util.List;
 import java.util.Optional;
 import java.util.function.BiFunction;
@@ -101,9 +98,8 @@ public class CaseWeaponItem extends WeaponItem {
 //    }
 
     @Override
-    public void appendHoverText(ItemStack item, @Nullable Level level, List<Component> list, TooltipFlag flag) {
-        super.appendHoverText(item, level, list, flag);
-
+    public void appendHoverText(ItemStack item, TooltipContext context, List<Component> list, TooltipFlag flag) {
+        super.appendHoverText(item, context, list, flag);
         String wear = StackUtils.getWearValue(item);
         String paint = StackUtils.getWearType(item);
         list.add(Component.translatable("tooltip.paintjob." + paint).withStyle(ChatFormatting.GRAY));

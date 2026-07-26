@@ -12,6 +12,7 @@ import com.nukateam.ntgl.client.render.renderers.weapon.DynamicWeaponRenderer;
 import com.nukateam.ntgl.common.util.data.Rgba;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
@@ -21,6 +22,8 @@ import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.renderer.layer.AutoGlowingGeoLayer;
 
 public class CustomWeaponRendererGeo extends DynamicWeaponRenderer<WeaponAnimator> {
+
+    public static final String NAMETAG = "nametag";
 
     public CustomWeaponRendererGeo() {
         super(new CustomWeaponModel());
@@ -35,9 +38,11 @@ public class CustomWeaponRendererGeo extends DynamicWeaponRenderer<WeaponAnimato
     }
 
     @Override
-    protected void renderRecursivelyPost(PoseStack poseStack, WeaponAnimator animatable, GeoBone bone, RenderType renderType, MultiBufferSource bufferSource, VertexConsumer buffer, boolean isReRender, float partialTick, int packedLight, int packedOverlay, Rgba rgba) {
-        if (!animatable.getStack().hasCustomHoverName()) {
-            hide(bone, "nametag");
+    protected void renderRecursivelyPost(PoseStack poseStack, WeaponAnimator animatable, GeoBone bone, RenderType renderType,
+                                         MultiBufferSource bufferSource, VertexConsumer buffer, boolean isReRender,
+                                         float partialTick, int packedLight, int packedOverlay, int color) {
+        if (!animatable.getStack().has(DataComponents.CUSTOM_NAME)) {
+            hide(bone, NAMETAG);
         }
     }
 

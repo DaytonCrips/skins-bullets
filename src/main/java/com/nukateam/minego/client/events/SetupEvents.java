@@ -2,20 +2,21 @@ package com.nukateam.minego.client.events;
 
 import com.nukateam.minego.MinecraftGo;
 import com.nukateam.minego.client.models.GunIconBake;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.ModelEvent;
-import net.minecraftforge.client.event.RegisterClientTooltipComponentFactoriesEvent;
-import net.minecraftforge.client.gui.ClientTooltipComponentManager;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
-@Mod.EventBusSubscriber(modid = MinecraftGo.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+import net.minecraft.resources.ResourceLocation;
+import net.neoforged.api.distmarker.Dist;
+
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.client.event.ModelEvent;
+import org.jetbrains.annotations.NotNull;
+
+import static com.nukateam.minego.MinecraftGo.mineGoResource;
+
+@EventBusSubscriber(modid = MinecraftGo.MOD_ID, value = Dist.CLIENT)
 public class SetupEvents {
-
-
     @SubscribeEvent
     public static void registerModels(ModelEvent.RegisterGeometryLoaders event) {
-        event.register("gun_icon_loader", GunIconBake.Loader.INSTANCE);
+        event.register(mineGoResource("gun_icon_loader"), GunIconBake.Loader.INSTANCE);
     }
 }

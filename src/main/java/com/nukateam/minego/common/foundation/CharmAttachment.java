@@ -18,8 +18,8 @@ public class CharmAttachment extends AttachmentItem {
     }
 
     @Override
-    public void appendHoverText(ItemStack stack, @Nullable Level pLevel, List tooltip, TooltipFlag pIsAdvanced) {
-        super.appendHoverText(stack, pLevel, tooltip, pIsAdvanced);
+    public void appendHoverText(ItemStack stack, TooltipContext context, List tooltip, TooltipFlag pIsAdvanced) {
+        super.appendHoverText(stack, context, tooltip, pIsAdvanced);
         tooltip.add(Component.translatable("charm." + StackUtils.getVariant(stack)));
         tooltip.add(Component.translatable("tooltip.charm.use"));
     }

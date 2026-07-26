@@ -1,70 +1,75 @@
 package com.nukateam.minego.utils;
 
+import com.nukateam.minego.common.registry.ModDataComponents;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.Tag;
 import net.minecraft.world.item.ItemStack;
 
 public class StackUtils {
-
-
-    public static final String EMPTY = "empty";
     public static String getVariant(ItemStack stack) {
-        CompoundTag tag = stack.getOrCreateTag();
-        return tag.contains("variant") ? tag.getString("variant") : "default";
+        return stack.getOrDefault(ModDataComponents.VARIANT.get(), "default");
+    }
+
+    public static void setVariant(ItemStack stack, String variant) {
+        stack.set(ModDataComponents.VARIANT.get(), variant);
     }
 
     public static String getWearType(ItemStack stack) {
-        CompoundTag tag = stack.getOrCreateTag();
-        return tag.contains("wear_type") ? tag.getString("wear_type") : "none";
+        return stack.getOrDefault(ModDataComponents.WEAR_TYPE.get(), "none");
     }
 
     public static void setWearType(ItemStack stack, String variant) {
-        CompoundTag tag = stack.getOrCreateTag();
-        tag.putString("wear_type", variant);
-        stack.setTag(tag);
+        stack.set(ModDataComponents.WEAR_TYPE.get(), variant);
     }
 
     public static String getWearValue(ItemStack stack) {
-        CompoundTag tag = stack.getOrCreateTag();
-        return tag.contains("wear_value") ? tag.getString("wear_value") : "gn";
+        return stack.getOrDefault(ModDataComponents.WEAR_VALUE.get(), "gn");
     }
 
     public static void setWearValue(ItemStack stack, String variant) {
-        CompoundTag tag = stack.getOrCreateTag();
-        tag.putString("wear_value", variant);
-        stack.setTag(tag);
+        stack.set(ModDataComponents.WEAR_VALUE.get(), variant);
     }
 
     public static String getRarity(ItemStack stack) {
-        CompoundTag tag = stack.getOrCreateTag();
-        return tag.contains("rarity") ? tag.getString("rarity") : "consumer";
-    }
-    public static String getSticker(ItemStack stack) {
-        CompoundTag tag = stack.getOrCreateTag();
-        return tag.contains("sticker") ? tag.getString("sticker") : "default";
-    }
-    public static void setSticker(ItemStack stack, String variant) {
-        CompoundTag tag = stack.getOrCreateTag();
-        tag.putString("sticker", variant);
-        stack.setTag(tag);
-    }
-    public static String getCollection(ItemStack stack) {
-        CompoundTag tag = stack.getOrCreateTag();
-        return tag.contains("collection") ? tag.getString("collection") : "default";
-    }
-    public static void setRarity(ItemStack stack, String variant) {
-        CompoundTag tag = stack.getOrCreateTag();
-        tag.putString("rarity", variant);
-        stack.setTag(tag);
-    }
-    public static void setCollection(ItemStack stack, String variant) {
-        CompoundTag tag = stack.getOrCreateTag();
-        tag.putString("collection", variant);
-        stack.setTag(tag);
-    }
-    public static void setVariant(ItemStack stack, String variant) {
-        CompoundTag tag = stack.getOrCreateTag();
-        tag.putString("variant", variant);
-        stack.setTag(tag);
+        return stack.getOrDefault(ModDataComponents.RARITY.get(), "consumer");
     }
 
+    public static void setRarity(ItemStack stack, String variant) {
+        stack.set(ModDataComponents.RARITY.get(), variant);
+    }
+
+    public static String getSticker(ItemStack stack) {
+        return stack.getOrDefault(ModDataComponents.STICKER.get(), "default");
+    }
+
+    public static void setSticker(ItemStack stack, String variant) {
+        stack.set(ModDataComponents.STICKER.get(), variant);
+    }
+
+    public static String getCollection(ItemStack stack) {
+        return stack.getOrDefault(ModDataComponents.COLLECTION.get(), "default");
+    }
+
+    public static void setCollection(ItemStack stack, String variant) {
+        stack.set(ModDataComponents.COLLECTION.get(), variant);
+    }
+
+    public static boolean hasStattrak(ItemStack stack) {
+        if (stack.isEmpty() || !stack.hasTag()) return false;
+
+        CompoundTag tag = stack.getTag();
+
+        // Проверка пути: Attachments -> minego:stattrak -> id
+        if (tag.contains("Attachments", Tag.TAG_COMPOUND)) {
+            CompoundTag attachments = tag.getCompound("Attachments");
+            if (attachments.contains("minego:stattrak", Tag.TAG_COMPOUND)) {
+                CompoundTag stattrak = attachments.getCompound("minego:stattrak");
+                if (stattrak.contains("id", Tag.TAG_STRING)) {
+                    return "minego:stattrak".equals(stattrak.getString("id"));
+                }
+            }
+        }
+
+        return false;
+    }
 }

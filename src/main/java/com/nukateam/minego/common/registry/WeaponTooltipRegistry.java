@@ -7,17 +7,16 @@ import net.minecraft.resources.ResourceLocation;
 
 import java.util.HashMap;
 
+import static com.nukateam.minego.MinecraftGo.mineGoResource;
+
 public class WeaponTooltipRegistry {
     private static final HashMap<ResourceLocation, WeaponElement<? extends WeaponPanels>> PANELS = new HashMap<>();
     private static final HashMap<ResourceLocation, WeaponElement<? extends WeaponFrames>> FRAMES = new HashMap<>();
     private static final HashMap<ResourceLocation, WeaponElement<? extends WeaponCollection>> ICONS = new HashMap<>();
 
-
-
     public static final WeaponElement<DefaultColorPanel> BUILTIN_PANEL_DEFAULT;
     public static final WeaponElement<WeaponFrames> BUILTIN_FRAME_BLANK;
     public static final WeaponElement<CollectionIcon> BUILTIN_ICON_COMMON;
-
 
     static {
         BUILTIN_PANEL_DEFAULT = registerPanel(builtinKey("default"),
@@ -28,7 +27,6 @@ public class WeaponTooltipRegistry {
 
         BUILTIN_ICON_COMMON = registerIcon(builtinKey("common"),
                 params -> new CollectionIcon());
-
     }
 
     public static <T extends WeaponPanels> WeaponElement<T> registerPanel(ResourceLocation key, WeaponElement<T> factory) {
@@ -46,7 +44,7 @@ public class WeaponTooltipRegistry {
     }
 
     private static ResourceLocation builtinKey(String key) {
-        return new ResourceLocation(MinecraftGo.MOD_ID, "builtin_"+key);
+        return mineGoResource("builtin_" + key);
     }
     public static void setup() {}
 }

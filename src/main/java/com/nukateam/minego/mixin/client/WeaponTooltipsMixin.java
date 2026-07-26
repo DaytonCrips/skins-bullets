@@ -18,7 +18,6 @@ import java.util.List;
 @SuppressWarnings("all")
 @Mixin(value = GuiGraphics.class, priority = 0)
 public class WeaponTooltipsMixin {
-
     @Shadow
     private ItemStack tooltipStack;
 

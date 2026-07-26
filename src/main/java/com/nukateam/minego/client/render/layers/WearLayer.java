@@ -11,7 +11,7 @@ import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
 import software.bernie.geckolib.cache.texture.AutoGlowingTexture;
-import software.bernie.geckolib.core.animatable.GeoAnimatable;
+import software.bernie.geckolib.animatable.GeoAnimatable;
 import software.bernie.geckolib.renderer.GeoRenderer;
 import software.bernie.geckolib.renderer.layer.GeoRenderLayer;
 
@@ -55,7 +55,9 @@ public class WearLayer<T extends GeoAnimatable> extends GeoRenderLayer<T> {
         poseStack.translate(-0.5, -0.5, -0.5);
         poseStack.translate(0.0, -0.01, 0.0);
         poseStack.translate((double) ClientDebug.X / 100.0 / 16.0, (double)ClientDebug.Y / 100.0 / 16.0, (double)ClientDebug.Z / 10.0 / 16.0);
-        this.getRenderer().reRender(bakedModel, poseStack, bufferSource, animatable, renderTypeNew, bufferSource.getBuffer(renderTypeNew), partialTick, packedLight, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F, 1.0F, 1.0F);
+        this.getRenderer().reRender(bakedModel, poseStack, bufferSource, animatable, renderTypeNew,
+                bufferSource.getBuffer(renderTypeNew), partialTick, packedLight,
+                OverlayTexture.NO_OVERLAY, 0XFFFFFFFF);
         poseStack.popPose();
     }
 }

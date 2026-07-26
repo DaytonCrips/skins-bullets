@@ -1,17 +1,16 @@
 package com.nukateam.minego.client.models;
 
 import com.nukateam.minego.MinecraftGo;
-import com.nukateam.minego.client.render.animators.SkinGunAnimator;
 import com.nukateam.minego.common.util.CsMineAttachmentTypes;
 import com.nukateam.minego.utils.StackUtils;
 import com.nukateam.ntgl.client.animators.WeaponAnimator;
 import com.nukateam.ntgl.client.model.IGlowingModel;
-import com.nukateam.ntgl.client.model.gun.GeoWeaponModel;
 import com.nukateam.ntgl.client.util.helpers.GeoModelHelper;
-import com.nukateam.ntgl.common.foundation.item.WeaponItem;
+import com.nukateam.ntgl.common.data.WeaponData;
 import com.nukateam.ntgl.common.util.util.WeaponStateHelper;
+import net.minecraft.client.Minecraft;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraftforge.registries.ForgeRegistries;
 import software.bernie.geckolib.model.GeoModel;
 
 import java.util.Map;
@@ -22,11 +21,11 @@ public class CustomWeaponModel<T extends WeaponAnimator> extends GeoModel<T> imp
     @Override
     public ResourceLocation getCharmTextureResource(T animatable) {
         var stack = animatable.getStack();
-        var charm = WeaponStateHelper.getAttachmentItem(CsMineAttachmentTypes.CHARM, stack);
+        var player = Minecraft.getInstance().player;
+        var charm = WeaponStateHelper.getAttachmentItem(CsMineAttachmentTypes.CHARM, new WeaponData(stack, player));
         var skin = StackUtils.getVariant(charm);
-        ResourceLocation charm_name = ForgeRegistries.ITEMS.getKey(charm.getItem());
-        assert charm_name != null;
-        return ResourceLocation.tryBuild(MinecraftGo.MOD_ID, "textures/charms/" + charm_name.getPath() + "_" + skin + ".png");
+        var charmName = BuiltInRegistries.ITEM.getKey(charm.getItem());
+        return ResourceLocation.tryBuild(MinecraftGo.MOD_ID, "textures/charms/" + charmName.getPath() + "_" + skin + ".png");
     }
 
     @Override
@@ -34,7 +33,6 @@ public class CustomWeaponModel<T extends WeaponAnimator> extends GeoModel<T> imp
         String sticker = StackUtils.getSticker(animatable.getStack());
         return ResourceLocation.tryBuild(MinecraftGo.MOD_ID, "textures/stickers/" + sticker + ".png");
     }
-
 
     @Override
     public ResourceLocation getWearTextureResource(T animatable) {
@@ -58,8 +56,11 @@ public class CustomWeaponModel<T extends WeaponAnimator> extends GeoModel<T> imp
 
     public ResourceLocation getTextureResource(T animator) {
         Map<String, ResourceLocation> textures = animator.getConfig().getTextures();
-        String variant = WeaponItem.getVariant(animator.getStack());
-        ResourceLocation resource = textures.containsKey(variant) ? textures.get(variant) : GeoModelHelper.getGunResource(animator, "textures/guns/" + animator.getStack().getDisplayName().getString() + "/", ".png".formatted());
+        var variant = StackUtils.getVariant(animator.getStack());
+        var path = "textures/guns/" + animator.getStack().getDisplayName().getString() + "/";
+        var resource = textures.containsKey(variant) ?
+                textures.get(variant) :
+                GeoModelHelper.getGunResource(animator, path, ".png".formatted());
         return resource;
     }
 

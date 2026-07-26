@@ -9,19 +9,21 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.block.model.ItemOverrides;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.client.resources.model.*;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.inventory.InventoryMenu;
 import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.client.ForgeRenderTypes;
-import net.minecraftforge.client.RenderTypeGroup;
-import net.minecraftforge.client.model.CompositeModel;
-import net.minecraftforge.client.model.geometry.*;
-import net.minecraftforge.registries.ForgeRegistries;
+import net.neoforged.neoforge.client.NeoForgeRenderTypes;
+import net.neoforged.neoforge.client.RenderTypeGroup;
+import net.neoforged.neoforge.client.model.CompositeModel;
+import net.neoforged.neoforge.client.model.geometry.*;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.util.function.Function;
+
+import static com.nukateam.minego.MinecraftGo.mineGoResource;
 
 public class GunIconBake implements IUnbakedGeometry<GunIconBake> {
     @Nonnull
@@ -35,17 +37,19 @@ public class GunIconBake implements IUnbakedGeometry<GunIconBake> {
         return new GunIconBake(stack);
     }
 
+    // resourceLocation больше не приходит в bake() — используем свой идентификатор для контекста
+    private static final ResourceLocation CONTEXT_NAME = mineGoResource("gun_icon_dynamic");
 
     @Override
     public BakedModel bake(IGeometryBakingContext context, ModelBaker modelBaker,
                            Function<Material, TextureAtlasSprite> function, ModelState modelState,
-                           ItemOverrides itemOverrides, ResourceLocation resourceLocation)
+                           ItemOverrides itemOverrides)
     {
         var particleLocation = getMaterial(context, "particle");
         var particleSprite = particleLocation != null ? function.apply(particleLocation) : null;
 
         var itemContext = StandaloneGeometryBakingContext.builder(context)
-                .withGui3d(false).withUseBlockLight(false).build(resourceLocation);
+                .withGui3d(false).withUseBlockLight(false).build(CONTEXT_NAME);
 
         var builder = CompositeModel.Baked.builder(itemContext, particleSprite,
                 new GunIconBake.ItemOverrideHandler(itemOverrides, modelBaker, itemContext, this),
@@ -58,8 +62,9 @@ public class GunIconBake implements IUnbakedGeometry<GunIconBake> {
                 function.apply(baseMaterial) :
                 function.apply(baseLocation);
 
-        var unbaked = UnbakedGeometryHelper.createUnbakedItemElements(0, sprite.contents());
-        var quads = UnbakedGeometryHelper.bakeElements(unbaked, $ -> sprite, modelState, resourceLocation);
+        var unbaked = UnbakedGeometryHelper.createUnbakedItemElements(0, sprite);
+        // bakeElements больше не принимает ResourceLocation
+        var quads = UnbakedGeometryHelper.bakeElements(unbaked, $ -> sprite, modelState);
 
         builder.addQuads(getLayerRenderTypes(), quads);
 
@@ -68,15 +73,15 @@ public class GunIconBake implements IUnbakedGeometry<GunIconBake> {
     }
 
     private static String getItemName(ItemStack stack) {
-        return ForgeRegistries.ITEMS.getKey(stack.getItem()).getPath();
+        return BuiltInRegistries.ITEM.getKey(stack.getItem()).getPath();
     }
 
     private static ResourceLocation getTexture(String nameItem, String skin) {
-        return new ResourceLocation(MinecraftGo.MOD_ID, "item/dynamic/" + nameItem + "/" + nameItem + "_" + skin);
+        return mineGoResource("item/dynamic/" + nameItem + "/" + nameItem + "_" + skin);
     }
 
     public static RenderTypeGroup getLayerRenderTypes() {
-        return new RenderTypeGroup(RenderType.translucent(), ForgeRenderTypes.ITEM_UNSORTED_TRANSLUCENT.get());
+        return new RenderTypeGroup(RenderType.translucent(), NeoForgeRenderTypes.ITEM_UNSORTED_TRANSLUCENT.get());
     }
 
     public enum Loader implements IGeometryLoader<GunIconBake> {
@@ -112,7 +117,8 @@ public class GunIconBake implements IUnbakedGeometry<GunIconBake> {
             if (overriden != originalModel) return overriden;
             if (!StackUtils.getVariant(stack).equals("default")) {
                 GunIconBake unbaked = this.parent.withStack(stack);
-                BakedModel bakedModel = unbaked.bake(owner, baker, Material::sprite, BlockModelRotation.X0_Y0, this, new ResourceLocation("minego:gun_icon_override"));
+                // bake() теперь без ResourceLocation-параметра
+                BakedModel bakedModel = unbaked.bake(owner, baker, Material::sprite, BlockModelRotation.X0_Y0, this);
                 return bakedModel;
             }
             return originalModel;

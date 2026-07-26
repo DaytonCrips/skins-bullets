@@ -10,7 +10,6 @@ import net.minecraft.world.item.ItemStack;
 import java.util.Optional;
 
 public class WeaponTooltipBuilder {
-
     public static Optional<TooltipFormat> defaultStyle(ItemStack stack) {
         return Optional.of(new TooltipFormat.Builder()
                 .withPanel(defaultPanel(stack))
@@ -22,9 +21,11 @@ public class WeaponTooltipBuilder {
     public static WeaponPanels defaultPanel(ItemStack stack) {
         return WeaponTooltipRegistry.BUILTIN_PANEL_DEFAULT.get();
     }
+
     public static WeaponFrames defaultFrame(ItemStack stack) {
         return WeaponTooltipRegistry.BUILTIN_FRAME_BLANK.get();
     }
+
     public static CollectionIcon defaultIcon(ItemStack stack) {
         return WeaponTooltipRegistry.BUILTIN_ICON_COMMON.get();
     }

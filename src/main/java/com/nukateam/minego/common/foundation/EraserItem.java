@@ -38,8 +38,7 @@ public class EraserItem extends Item {
     }
 
     @Override
-    public void appendHoverText(ItemStack item, @Nullable Level level, List<Component> list, TooltipFlag flag) {
-        super.appendHoverText(item, level, list, flag);
-        list.add(Component.translatable("tooltip.eraser.use"));
+    public void appendHoverText(ItemStack item, TooltipContext context, List<Component> list, TooltipFlag flag) {
+        super.appendHoverText(item, context, list, flag);        list.add(Component.translatable("tooltip.eraser.use"));
     }
 }

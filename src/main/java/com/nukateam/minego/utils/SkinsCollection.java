@@ -1,10 +1,9 @@
 package com.nukateam.minego.utils;
 
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.registries.ForgeRegistries;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -33,17 +32,15 @@ public class SkinsCollection {
         return SKINS.size();
     }
 
-
-
     public ItemStack getRandomSkin(){
         GunSkin skin = getWeightItem();
         assert skin != null;
         if (skin.getGun().equals("gold")) {
-            SkinsCollection collection = SkinManager.getCollection(skin.getSkin_name());
-            ItemStack knife = collection.getRandomSkin();
+            var collection = SkinManager.getCollection(skin.getSkin_name());
+            var knife = collection.getRandomSkin();
             return knife;
         } else {
-            Item item = ForgeRegistries.ITEMS.getValue(new ResourceLocation(skin.getGun()));
+            Item item = BuiltInRegistries.ITEM.get(ResourceLocation.parse(skin.getGun()));
             ItemStack gun = new ItemStack(item);
             StackUtils.setVariant(gun, skin.getSkin_name());
             StackUtils.setRarity(gun, skin.getRarity());
