@@ -3,7 +3,6 @@ package com.nukateam.minego.client.render;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.nukateam.minego.client.models.CustomWeaponModel;
-import com.nukateam.minego.client.render.animators.SkinGunAnimator;
 import com.nukateam.minego.client.render.layers.CharmedLayer;
 import com.nukateam.minego.client.render.layers.StickeredLayer;
 import com.nukateam.minego.client.render.layers.WearLayer;
@@ -22,7 +21,6 @@ import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.renderer.layer.AutoGlowingGeoLayer;
 
 public class CustomWeaponRendererGeo extends DynamicWeaponRenderer<WeaponAnimator> {
-
     public static final String NAMETAG = "nametag";
 
     public CustomWeaponRendererGeo() {

@@ -55,20 +55,20 @@ public class StackUtils {
     }
 
     public static boolean hasStattrak(ItemStack stack) {
-        if (stack.isEmpty() || !stack.hasTag()) return false;
-
-        CompoundTag tag = stack.getTag();
-
-        // Проверка пути: Attachments -> minego:stattrak -> id
-        if (tag.contains("Attachments", Tag.TAG_COMPOUND)) {
-            CompoundTag attachments = tag.getCompound("Attachments");
-            if (attachments.contains("minego:stattrak", Tag.TAG_COMPOUND)) {
-                CompoundTag stattrak = attachments.getCompound("minego:stattrak");
-                if (stattrak.contains("id", Tag.TAG_STRING)) {
-                    return "minego:stattrak".equals(stattrak.getString("id"));
-                }
-            }
-        }
+//        if (stack.isEmpty() || !stack.hasTag()) return false;
+//
+//        CompoundTag tag = stack.getTag();
+//
+//        // Проверка пути: Attachments -> minego:stattrak -> id
+//        if (tag.contains("Attachments", Tag.TAG_COMPOUND)) {
+//            CompoundTag attachments = tag.getCompound("Attachments");
+//            if (attachments.contains("minego:stattrak", Tag.TAG_COMPOUND)) {
+//                CompoundTag stattrak = attachments.getCompound("minego:stattrak");
+//                if (stattrak.contains("id", Tag.TAG_STRING)) {
+//                    return "minego:stattrak".equals(stattrak.getString("id"));
+//                }
+//            }
+//        }
 
         return false;
     }

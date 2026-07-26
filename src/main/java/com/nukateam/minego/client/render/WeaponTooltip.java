@@ -21,14 +21,10 @@ import java.awt.*;
 import java.util.List;
 
 @OnlyIn(Dist.CLIENT)
-@EventBusSubscriber(value = Dist.CLIENT)
 public class WeaponTooltip {
     @Nullable
     private static TooltipFormat renderStyle = null;
-
     private static ItemStack renderStack = ItemStack.EMPTY;
-
-
 
     public static boolean build(WeaponTooltipRender renderer, ItemStack stack, Font font, List<ClientTooltipComponent> components, int x, int y, ClientTooltipPositioner positioner) {
         if (stack.getItem() instanceof WeaponItem && !StackUtils.getCollection(stack).equals("default")) {

@@ -2,8 +2,6 @@ package com.nukateam.minego.common.foundation;
 
 import com.nukateam.geo.render.DynamicGeoItemRenderer;
 import com.nukateam.minego.client.render.CustomWeaponRendererGeo;
-import com.nukateam.minego.client.render.animators.SkinGunAnimator;
-import com.nukateam.minego.common.registry.ModItems;
 import com.nukateam.minego.utils.SkinManager;
 import com.nukateam.minego.utils.StackUtils;
 import com.nukateam.ntgl.client.animators.WeaponAnimator;
@@ -27,8 +25,9 @@ import java.util.List;
 import java.util.Optional;
 import java.util.function.BiFunction;
 
+import static com.nukateam.minego.utils.StackUtils.hasStattrak;
+
 public class CaseWeaponItem extends WeaponItem {
-    private final Lazy<CustomWeaponRendererGeo> RENDERER = Lazy.of(() -> new CustomWeaponRendererGeo());
     public CaseWeaponItem(Properties properties, IWeaponModifier... modifiers) {
         super(properties, modifiers);
     }
@@ -40,34 +39,6 @@ public class CaseWeaponItem extends WeaponItem {
         StackUtils.setRarity(this.getDefaultInstance(), rarity);
         StackUtils.setWearValue(this.getDefaultInstance(), wear);
         StackUtils.setWearType(this.getDefaultInstance(), wear_type);
-    }
-
-
-    public static boolean hasStattrak(ItemStack stack) {
-        if (stack.isEmpty() || !stack.hasTag()) return false;
-
-        CompoundTag tag = stack.getTag();
-
-        if (tag.contains("Attachments", Tag.TAG_COMPOUND)) {
-            CompoundTag attachments = tag.getCompound("Attachments");
-            if (attachments.contains("minego:stattrak", Tag.TAG_COMPOUND)) {
-                CompoundTag stattrak = attachments.getCompound("minego:stattrak");
-                if (stattrak.contains("id", Tag.TAG_STRING)) {
-                    return "minego:stattrak".equals(stattrak.getString("id"));
-                }
-            }
-        }
-
-        return false;
-    }
-
-    @Override
-    public DynamicGeoItemRenderer getRenderer() {
-        return RENDERER.get();
-    }
-    @Override
-    public BiFunction<ItemDisplayContext, DynamicWeaponRenderer<WeaponAnimator>, WeaponAnimator> getAnimatorFactory() {
-        return WeaponAnimator::new;
     }
 
     @Override

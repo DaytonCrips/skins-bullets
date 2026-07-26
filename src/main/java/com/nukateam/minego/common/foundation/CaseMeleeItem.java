@@ -1,6 +1,6 @@
 package com.nukateam.minego.common.foundation;
 
-import com.nukateam.minego.client.render.KnifesAnimator;
+import com.nukateam.minego.client.render.animators.KnifesAnimator;
 import com.nukateam.minego.utils.SkinManager;
 import com.nukateam.minego.utils.StackUtils;
 import com.nukateam.ntgl.client.animators.WeaponAnimator;
@@ -10,12 +10,10 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
-import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 
 import java.util.List;
-import java.util.function.BiFunction;
 
 public class CaseMeleeItem extends WeaponItem {
     public CaseMeleeItem(Properties properties) {
@@ -29,11 +27,6 @@ public class CaseMeleeItem extends WeaponItem {
         StackUtils.setRarity(this.getDefaultInstance(), rarity);
         StackUtils.setWearValue(this.getDefaultInstance(), wear);
         StackUtils.setWearType(this.getDefaultInstance(), wear_type);
-    }
-
-    @Override
-    public BiFunction<ItemDisplayContext, DynamicWeaponRenderer<WeaponAnimator>, WeaponAnimator> getAnimatorFactory() {
-        return KnifesAnimator::new;
     }
 
     @Override
